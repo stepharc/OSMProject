@@ -11,9 +11,8 @@ class OSMPROJECT_API APlayerPawn : public APawn
 {
 	GENERATED_BODY()
 
-public:
-	// Sets default values for this pawn's properties
-	APlayerPawn();
+private:
+	bool DoTrace(FHitResult* RV_Hit, FCollisionQueryParams* RV_TraceParams);
 
 protected:
 	//Spring arms are a good, simple way to attach a camera (or other Components) so that they're not overly rigid and feel more fluid as they move.
@@ -27,6 +26,8 @@ protected:
 	float ZoomFactor;
 	bool bZoomingIn;
 
+	AActor * selectedActor;
+
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
@@ -35,14 +36,18 @@ protected:
 	void MoveRight(float AxisValue);
 	void PitchCamera(float AxisValue);
 	void YawCamera(float AxisValue);
+	void ChangeSelectedActorVisibility();
 	void ZoomIn();
 	void ZoomOut();
+	void CastTrace();
 
-public:	
+public:
+	// Sets default values for this pawn's properties
+	APlayerPawn();
+
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
 };
