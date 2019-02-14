@@ -2,8 +2,11 @@
 
 #include "PlayerPawn.h"
 #include "OSMProject.h"
+#include "Engine/World.h"
+#include "Engine/GameEngine.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Camera/CameraComponent.h"
+#include "Public/CollisionQueryParams.h"
 #include "Components/InputComponent.h"
 
 // Sets default values
@@ -60,7 +63,7 @@ void APlayerPawn::Tick(float DeltaTime)
 
 		//Blend our camera's FOV and our SpringArm's length based on ZoomFactor
 		Camera->FieldOfView = FMath::Lerp<float>(90.0f, 60.0f, ZoomFactor);
-		CameraSpringArm->TargetArmLength = FMath::Lerp<float>(400.0f, 300.0f, ZoomFactor);
+		CameraSpringArm->TargetArmLength = FMath::Lerp<float>(200.0f, 150.0f, ZoomFactor);
 	}
 	//Rotate our actor's yaw, which will turn our camera because we're attached to it
 	{
@@ -96,9 +99,11 @@ void APlayerPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
-	//Hook up events for "ZoomIn" and "ZoomOut"
+	//Hook up events for "ZoomIn", "ZoomOut", "Raycasting" and "Hide/Show slected actor"
 	PlayerInputComponent->BindAction("ZoomIn", IE_Pressed, this, &APlayerPawn::ZoomIn);
 	PlayerInputComponent->BindAction("ZoomOut", IE_Pressed, this, &APlayerPawn::ZoomOut);
+	PlayerInputComponent->BindAction("Raycast", IE_Pressed, this, &APlayerPawn::CastTrace);
+	PlayerInputComponent->BindAction("Hide/Show selected actor", IE_Pressed, this, &APlayerPawn::ChangeSelectedActorVisibility);
 
 	//Hook up every-frame handling for our four axes
 	PlayerInputComponent->BindAxis("MoveForward", this, &APlayerPawn::MoveForward);
@@ -136,5 +141,51 @@ void APlayerPawn::ZoomIn()
 void APlayerPawn::ZoomOut()
 {
 	bZoomingIn = false;
+}
+
+//Source : https://answers.unrealengine.com/questions/25650/simple-raycast-line-trace-from-camera.html
+bool APlayerPawn::DoTrace(FHitResult* RV_Hit, FCollisionQueryParams* RV_TraceParams){
+	float InteractionDistance = 300.0;
+
+	FVector CameraLoc = GetActorLocation();
+	FRotator CameraRot = GetActorRotation();
+
+	FVector Start = CameraLoc;
+	FVector End = CameraLoc + (CameraRot.Vector() * InteractionDistance);
+
+	RV_TraceParams->bTraceComplex = true;
+	RV_TraceParams->bTraceAsyncScene = true;
+	RV_TraceParams->bReturnPhysicalMaterial = true;
+
+	//Do the line trace, from the camera. Any actors intersected will be stored in RV_Hit.
+	bool DidTrace = GetWorld()->LineTraceSingleByChannel(
+		*RV_Hit,        //result
+		Start,
+		End,
+		ECC_Pawn,    //Collision channel : only intersected actors with this channel (or Default) as a collision preset will be considered.
+		*RV_TraceParams
+	);
+
+	return DidTrace;
+}
+
+void APlayerPawn::CastTrace(){
+	FHitResult RV_Hit(ForceInit);
+	FCollisionQueryParams RV_TraceParams = FCollisionQueryParams(FName(TEXT("RV_Trace")), true, this);
+	bool DidTrace = DoTrace(&RV_Hit, &RV_TraceParams);
+	if (DidTrace) {
+		selectedActor = RV_Hit.GetActor();
+		FString IntersectedActorName = selectedActor->GetName();
+		if(GEngine) GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Red, TEXT("Intersection with : ") + IntersectedActorName);
+	}
+	else{
+		selectedActor = nullptr;
+	}
+}
+
+void APlayerPawn::ChangeSelectedActorVisibility() {
+	if (selectedActor == NULL) return;
+	bool isVisible = selectedActor->bHidden;
+	selectedActor->SetActorHiddenInGame(!isVisible);
 }
 
