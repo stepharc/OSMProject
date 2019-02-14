@@ -6,6 +6,8 @@
 #include "GameFramework/Pawn.h"
 #include "PlayerPawn.generated.h"
 
+//DECLARE_DELEGATE_OneParam(ActorDelegate, AActor *);
+
 UCLASS()
 class OSMPROJECT_API APlayerPawn : public APawn
 {
@@ -27,6 +29,7 @@ protected:
 	bool bZoomingIn;
 
 	AActor * selectedActor;
+	AActor * hoveredActor;
 
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -40,6 +43,7 @@ protected:
 	void ZoomIn();
 	void ZoomOut();
 	void CastTrace();
+	void CastHoverTrace();
 
 public:
 	// Sets default values for this pawn's properties
