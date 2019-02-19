@@ -99,10 +99,11 @@ void APlayerPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
-	//Hook up events for "ZoomIn", "ZoomOut", "Raycasting" and "Hide/Show slected actor"
+	//Hook up events for "ZoomIn", "ZoomOut", "Raycast", "Hover Raycast" and "Hide/Show slected actor"
 	PlayerInputComponent->BindAction("ZoomIn", IE_Pressed, this, &APlayerPawn::ZoomIn);
 	PlayerInputComponent->BindAction("ZoomOut", IE_Pressed, this, &APlayerPawn::ZoomOut);
 	PlayerInputComponent->BindAction("Raycast", IE_Pressed, this, &APlayerPawn::CastTrace);
+	PlayerInputComponent->BindAction("Hover Raycast", IE_Pressed, this, &APlayerPawn::CastHoverTrace);
 	PlayerInputComponent->BindAction("Hide/Show selected actor", IE_Pressed, this, &APlayerPawn::ChangeSelectedActorVisibility);
 
 	//Hook up every-frame handling for our four axes
@@ -176,10 +177,24 @@ void APlayerPawn::CastTrace(){
 	if (DidTrace) {
 		selectedActor = RV_Hit.GetActor();
 		FString IntersectedActorName = selectedActor->GetName();
-		if(GEngine) GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Red, TEXT("Intersection with : ") + IntersectedActorName);
+		GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Red, TEXT("Selected : ") + IntersectedActorName);
 	}
 	else{
 		selectedActor = nullptr;
+	}
+}
+
+void APlayerPawn::CastHoverTrace() {
+	FHitResult RV_Hit(ForceInit);
+	FCollisionQueryParams RV_TraceParams = FCollisionQueryParams(FName(TEXT("RV_HoverTrace")), true, this);
+	bool DidTrace = DoTrace(&RV_Hit, &RV_TraceParams);
+	if (DidTrace) {
+		hoveredActor = RV_Hit.GetActor();
+		FString IntersectedActorName = hoveredActor->GetName();
+		GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Yellow, TEXT("Hovering : ") + IntersectedActorName);
+	}
+	else {
+		hoveredActor = nullptr;
 	}
 }
 
