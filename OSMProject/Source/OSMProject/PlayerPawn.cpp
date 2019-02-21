@@ -99,14 +99,12 @@ void APlayerPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
-	//Hook up events for "ZoomIn", "ZoomOut", "Raycast", "Hover Raycast" and "Hide/Show slected actor"
 	PlayerInputComponent->BindAction("ZoomIn", IE_Pressed, this, &APlayerPawn::ZoomIn);
 	PlayerInputComponent->BindAction("ZoomOut", IE_Pressed, this, &APlayerPawn::ZoomOut);
 	PlayerInputComponent->BindAction("Raycast", IE_Pressed, this, &APlayerPawn::CastTrace);
 	PlayerInputComponent->BindAction("Hover Raycast", IE_Pressed, this, &APlayerPawn::CastHoverTrace);
 	PlayerInputComponent->BindAction("Hide/Show selected actor", IE_Pressed, this, &APlayerPawn::ChangeSelectedActorVisibility);
 
-	//Hook up every-frame handling for our four axes
 	PlayerInputComponent->BindAxis("MoveForward", this, &APlayerPawn::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &APlayerPawn::MoveRight);
 	PlayerInputComponent->BindAxis("CameraPitch", this, &APlayerPawn::PitchCamera);
