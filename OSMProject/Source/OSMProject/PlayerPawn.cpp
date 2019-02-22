@@ -7,6 +7,7 @@
 #include "GameFramework/SpringArmComponent.h"
 #include "Camera/CameraComponent.h"
 #include "Public/CollisionQueryParams.h"
+#include "Kismet/GameplayStatics.h"
 #include "Components/InputComponent.h"
 
 // Sets default values
@@ -41,7 +42,7 @@ APlayerPawn::APlayerPawn()
 void APlayerPawn::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	Hud = Cast<AViewerHUD>(UGameplayStatics::GetPlayerController(this, 0)->GetHUD());
 }
 
 // Called every frame
@@ -174,11 +175,11 @@ void APlayerPawn::CastTrace(){
 	bool DidTrace = DoTrace(&RV_Hit, &RV_TraceParams);
 	if (DidTrace) {
 		selectedActor = RV_Hit.GetActor();
-		FString IntersectedActorName = selectedActor->GetName();
-		GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Red, TEXT("Selected : ") + IntersectedActorName);
+		Hud->setCrosshairColor(FColor::Red);
 	}
 	else{
 		selectedActor = nullptr;
+		Hud->setCrosshairColor(FColor::White);
 	}
 }
 
@@ -188,11 +189,11 @@ void APlayerPawn::CastHoverTrace() {
 	bool DidTrace = DoTrace(&RV_Hit, &RV_TraceParams);
 	if (DidTrace) {
 		hoveredActor = RV_Hit.GetActor();
-		FString IntersectedActorName = hoveredActor->GetName();
-		GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Yellow, TEXT("Hovering : ") + IntersectedActorName);
+		Hud->setCrosshairColor(FColor::Yellow);
 	}
 	else {
 		hoveredActor = nullptr;
+		Hud->setCrosshairColor(FColor::White);
 	}
 }
 

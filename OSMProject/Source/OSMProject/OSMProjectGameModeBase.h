@@ -13,5 +13,6 @@ UCLASS()
 class OSMPROJECT_API AOSMProjectGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
-	
+
+		AOSMProjectGameModeBase();
 };

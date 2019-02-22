@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
+#include "ViewerHUD.h"
 #include "PlayerPawn.generated.h"
 
 //! PlayerPawn class.
@@ -40,6 +41,8 @@ protected:
 	FVector2D CameraInput; /*!< For camera yaw and pitch manipulation. */
 	float ZoomFactor; /*!< For camera zoom manipulation. */
 	bool bZoomingIn; /*!< Zoom / Unzoom the camera. */
+
+	AViewerHUD * Hud; /*!< Heads-up display. */
 
 	//! selectedActor variable.
 	/*!
