@@ -14,12 +14,16 @@ class OSMPROJECT_API AViewerHUD : public AHUD
 {
 	GENERATED_BODY()
 	
-protected:
-	FColor CrosshairColor;
-	float CrosshairSize;
+private:
+	FColor CrosshairColor_;
+	float CrosshairSize_;
+	int infoBoxLines_;
+	bool showInfoBox_;
 
 public:
 	AViewerHUD();
 	virtual void DrawHUD() override;
 	void setCrosshairColor(FColor color);
+	void setInfoBoxVisibility(bool v);
+	void sendActorInfo();
 };
