@@ -176,10 +176,13 @@ void APlayerPawn::CastTrace(){
 	if (DidTrace) {
 		selectedActor = RV_Hit.GetActor();
 		Hud->setCrosshairColor(FColor::Red);
+		// Hud->sendActorInfo();
+		Hud->setInfoBoxVisibility(true);
 	}
 	else{
 		selectedActor = nullptr;
 		Hud->setCrosshairColor(FColor::White);
+		Hud->setInfoBoxVisibility(false);
 	}
 }
 
