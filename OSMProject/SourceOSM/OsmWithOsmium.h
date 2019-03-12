@@ -17,4 +17,5 @@ public:
 	void addDataToExtract(std::string category, std::string subcategory, std::vector<std::string> tags);
 	osmium::io::Header getInputFileHeader();
 	void printDataStorage(bool showNodes, bool showWays, bool showRelations);
+	static void insertValue(std::string id, std::string tagname, std::string tagvalue, std::map<std::string, std::vector<std::pair<std::string, std::string>>>& dataStorage);
 };
