@@ -1,2 +1,10 @@
 ﻿  Myreadosm_member.cpp
+  Myreadosm_tag.cpp
+  Nodereadosm.cpp
+  OsmWithreadosm.cpp
+  Point.cpp
+  Relationreadosm.cpp
+  Wayreadosm.cpp
+  main.cpp
+  Génération de code en cours...
   osmPart.vcxproj -> D:\Sync\backup\AAddToBackUP\Travaille\Projet_S2\test\moi\readosmTest\osmPart\osmPart\Debug\osmPart.exe
