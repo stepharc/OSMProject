@@ -111,6 +111,13 @@ public:
 	std::string getTimestamp(void);
 
 	/*!
+	*  \brief Set the timestamp of the Way
+	*
+	*  \param The timestamp of the Way
+	*/
+	void setTimestamp(std::string);
+
+	/*!
 	*  \brief Get the node_ref_count of the Way
 	*
 	*  \return The node_ref_count of the Way

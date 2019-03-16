@@ -16,6 +16,10 @@
 
 #include <vector>
 #include <string>
+#include <map>
+
+// pour la lecture des fichier non osm
+#include <fstream>
 
 // "node" qui sera intégré a l'objet
 
@@ -41,8 +45,258 @@ std::string waysValue;
 std::string relationsKey;
 std::string relationsValue;
 
+	
+// Fonction pour écrire les information d'un node dans un fichier
 
-// function for trait osm files
+// Cette fonction ouvre, écrit puis ferme le fichier
+void oNode(std::string fic, Nodereadosm myNode)
+{
+	// Ouverture du fichier, le fichier est créé s'il n'existe pas,
+		// mais son contenu n'est pas supprimé s'il existe
+	std::ofstream NodeFile(fic, std::ios::out | std::ios::app);
+
+	if (NodeFile)
+	{
+
+		NodeFile << myNode.getId() << std::endl;
+
+		NodeFile << myNode.getLatitude() << std::endl;
+
+		NodeFile << myNode.getLongitude() << std::endl;
+
+		NodeFile << myNode.getVersion() << std::endl;
+
+		NodeFile << myNode.getChangeset() << std::endl;
+
+		NodeFile << myNode.getUser() << std::endl;
+
+		NodeFile << myNode.getUid() << std::endl;
+
+		NodeFile << myNode.getTimestamp() << std::endl;
+
+		NodeFile << myNode.getTag_count() << std::endl;
+
+		for (Myreadosm_tag tag : myNode.getTags())
+		{
+			NodeFile << tag.getKey() << std::endl;
+			NodeFile << tag.getValue() << std::endl;
+		}
+
+		NodeFile.close();
+	}
+	else
+		std::cerr << "Impossible d'ouvrir le fichier !" << std::endl;
+}
+
+// Cette fonction renvoie l'ensble des clés de "myNode" présent dans le fichier "arbo"
+// Avec leurs valeure correct associée (ex: < < "waterway", "stream" >, < "building" >, etc.>
+std::vector< std::vector<std::string>> iArboKey(std::string arbo, Nodereadosm myNode)
+{
+	// Ligne actuelle dans la lecture du fichier
+	std::string ligne;
+
+	// Nom d'une clé valide pour une catégorie
+	std::string keyArbo;
+
+	// Nom d'une valeur valide pour une catégorie
+	std::string valueArbo;
+
+	// liste des tag valide présent dans le node, contient
+	// la liste des clés valide présente dans le node
+	// la liste des valeures valide présente dans le node
+	// de la forme < <key, value>, <key, value>, <key, value> >
+	// si un des deux champs n'est pas indiqué, alors le node n'ont possède pas
+	std::vector< std::vector<std::string>> tagsOK;
+
+	// un tag temporaire, qui sera par la suite rajouté à tagsOK
+	std::vector<std::string> tagOK;
+
+	// si le flag vaut true, une valeure valide a était troue
+	//bool flag = false;
+
+	std::ifstream fichier(arbo, std::ios::in);
+
+	if (fichier)
+	{
+
+		// parcourir chaque ligne du fichier arbo
+		while (getline(fichier, ligne))
+		{
+			// Si la ligne contient "Node"
+			//    : ligne.find("Node") != std::string::npos
+			// et qu'elle ne contient pas "\t"
+			//    : ligne.find("\t") == std::string::npos
+			// alors la ligne courrante indique le nom d'une clé pour un node
+			if ((ligne.find("Node") != std::string::npos)
+				&& (ligne.find("\t") == std::string::npos))
+			{
+				// On prend la catégorie de la clé
+				// Dans le fichier arbo, une clé est carractérisé
+				// par le premier mot de la phrase suivi de " [" 
+				keyArbo = ligne.substr(0, ligne.find(" [") - 1);
+
+				// On analyse les tags du node donné
+				for (Myreadosm_tag tag : myNode.getTags())
+					// Si le tag du node est valide
+					if (tag.getKey() == keyArbo)
+					{
+						// Alors on stock cette clé dans la liste des clé valide
+						tagOK.push_back(tag.getKey());
+
+						// On cherche les valeure asscié
+						getline(fichier, ligne);
+
+						// Si la ligne contient "\t[Node]"
+						if (ligne.find("\t[Node]") != std::string::npos)
+							while (true)
+							{
+								getline(fichier, ligne);
+								if (ligne.find("\t\t") != std::string::npos)
+								{
+									// On stocke la valeur
+									valueArbo = ligne.substr(ligne.find("\t\t") + std::string("\t\t").size());
+
+									// Si le tag du node est valide
+									if (tag.getValue() == valueArbo)
+										// Alors on stock ce tag dans la liste des tags valide
+										tagOK.push_back(tag.getValue());
+
+									tagsOK.push_back(tagOK);
+
+									// réinitialisation de tagOK
+									tagOK.clear();
+									tagOK.push_back(tag.getKey());
+								}
+								else
+									break;
+							}
+					}
+
+			}
+		}
+
+		fichier.close();
+	}
+	else
+		std::cerr << "Impossible d'ouvrir le fichier !" << std::endl;
+
+	return tagsOK;
+}
+
+// Cette fonction insert un node dans les fichier adéquat en fonction de sa catégorie
+
+static int
+insertNode(const void *user_data, const readosm_node * node)
+{
+
+	char buf[128];
+	int i;
+	const readosm_tag *tag;
+
+	Nodereadosm myNode;
+	Myreadosm_tag myTag;
+
+	std::vector< std::vector<std::string> > tagsOK;
+
+	std::string fic;
+
+	if (user_data != NULL)
+		user_data = NULL;	/* silencing stupid compiler warnings */
+
+	// Sauvegarde du node en RAM via l'objet Nodereadosm
+
+#if defined(_WIN32) || defined(__MINGW32__)
+	/* CAVEAT - M$ runtime doesn't supports %lld for 64 bits */
+	sprintf(buf, "%I64d", node->id);
+#else
+	sprintf(buf, "%lld", node->id);
+#endif
+
+	myNode.setId(buf);
+
+	if (node->latitude != READOSM_UNDEFINED)
+		myNode.setLatitude(node->latitude);
+
+	if (node->longitude != READOSM_UNDEFINED)
+		myNode.setLongitude(node->longitude);
+
+	if (node->version != READOSM_UNDEFINED)
+		myNode.setVersion(node->version);
+
+	if (node->changeset != READOSM_UNDEFINED)
+	{
+#if defined(_WIN32) || defined(__MINGW32__)
+		/* CAVEAT - M$ runtime doesn't supports %lld for 64 bits */
+		sprintf(buf, "%I64d", node->changeset);
+#else
+		sprintf(buf, "%lld", node->changeset);
+#endif
+		myNode.setChangeset(buf);
+	}
+
+	if (node->user != NULL)
+		myNode.setUser(node->user);
+
+	if (node->uid != READOSM_UNDEFINED)
+		myNode.setUid(node->uid);
+
+	if (node->timestamp != NULL)
+		myNode.setTimestamp(node->timestamp);
+
+	myNode.setTag_count(node->tag_count);
+
+	if (node->tag_count > 0)
+		for (i = 0; i < node->tag_count; i++)
+		{
+			tag = node->tags + i;
+			myTag.setKey(tag->key);
+			myTag.setValue(tag->value);
+			myNode.appendTags(myTag);
+		}
+
+	// Stockage du node dans la bonne catégorie en mémoire masse
+
+	// Stocke, pour commencer le node courrant dans le fichier des nodes
+	fic = ".\\..\\..\\..\\Arbo\\Node.txt";
+	oNode(fic, myNode);
+
+	//puis, si sa catégorie est rensigné on stocke dans le fichier plus précis
+
+	// On test la clé pour commencer
+	tagsOK = iArboKey(".\\..\\..\\..\\arbo.txt", myNode);
+	for (std::vector<std::string> tagOK : tagsOK)
+	{
+		if (tagOK.size() == 1)
+		{
+			fic = ".\\..\\..\\..\\Arbo\\Node:" + tagOK[0] + ".txt";
+			oNode(fic, myNode);
+		}
+		if (tagOK.size() == 2)
+		{
+			fic = ".\\..\\..\\..\\Arbo\\Node:" + tagOK[0] + ":" + tagOK[1] + ".txt";
+			oNode(fic, myNode);
+		}
+	}
+
+
+	return READOSM_OK;
+}
+
+// Constructeur / déstructeur
+
+OsmWithreadosm::OsmWithreadosm()
+{
+	this->fileOsm = "..\\..\\..\\var.osm";
+
+
+
+}
+
+
+OsmWithreadosm::~OsmWithreadosm()
+{
+}
+
 
 static int
 extractNode(const void *user_data, const readosm_node * node)
@@ -84,7 +338,7 @@ extractNode(const void *user_data, const readosm_node * node)
 		return READOSM_OK;
 
 #if defined(_WIN32) || defined(__MINGW32__)
-/* CAVEAT - M$ runtime doesn't supports %lld for 64 bits */
+	/* CAVEAT - M$ runtime doesn't supports %lld for 64 bits */
 	sprintf(buf, "%I64d", node->id);
 #else
 	sprintf(buf, "%lld", node->id);
@@ -97,10 +351,10 @@ extractNode(const void *user_data, const readosm_node * node)
 
 	if (node->longitude != READOSM_UNDEFINED)
 		myNode.setLongitude(node->longitude);
-	
+
 	if (node->version != READOSM_UNDEFINED)
 		myNode.setVersion(node->version);
-	
+
 	if (node->changeset != READOSM_UNDEFINED)
 	{
 #if defined(_WIN32) || defined(__MINGW32__)
@@ -114,10 +368,10 @@ extractNode(const void *user_data, const readosm_node * node)
 
 	if (node->user != NULL)
 		myNode.setUser(node->user);
-	
+
 	if (node->uid != READOSM_UNDEFINED)
 		myNode.setUid(node->uid);
-	
+
 	if (node->timestamp != NULL)
 		myNode.setTimestamp(node->timestamp);
 
@@ -321,22 +575,8 @@ extractRelation(const void *user_data, const readosm_relation * relation)
 		}
 
 	::myRelations.push_back(myRelation);
-	   	
+
 	return READOSM_OK;
-}
-
-
-
-// Constructeur / déstructeur
-
-OsmWithreadosm::OsmWithreadosm()
-{
-	this->fileOsm = "..\\..\\..\\var.osm";
-}
-
-
-OsmWithreadosm::~OsmWithreadosm()
-{
 }
 
 void OsmWithreadosm::initWithCat(std::vector<std::string> nodes, std::vector<std::string> ways, std::vector<std::string> relations)

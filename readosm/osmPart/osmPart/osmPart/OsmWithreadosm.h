@@ -31,7 +31,7 @@ public:
 	/*!
 	 *  \brief Constructor
 	 *
-	 *  Constructor of the class OsmWithreadosm, this one allows to give a file by default
+	 *  Constructor of the class OsmWithreadosm, this one allows to give a file by default and categorize objects
 	 */
 	OsmWithreadosm();
 
