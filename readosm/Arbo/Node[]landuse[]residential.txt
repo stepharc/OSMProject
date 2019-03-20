@@ -1,0 +1,405 @@
+458470520
+43.6376
+5.80166
+2
+8310827
+krysst
+16038
+2011-06-01T15:28:10Z
+2
+name
+La Goye
+landuse
+residential
+482253932
+43.5397
+6.47076
+5
+8311086
+krysst
+16038
+2011-06-01T15:06:42Z
+4
+name
+La Calade
+is_in
+Draguignan
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+landuse
+residential
+482253934
+43.5415
+6.47041
+6
+8311086
+krysst
+16038
+2011-06-01T15:06:40Z
+4
+name
+En dessus de Ville
+is_in
+Draguignan
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+landuse
+residential
+482253937
+43.5375
+6.47573
+5
+8311086
+krysst
+16038
+2011-06-01T15:06:36Z
+4
+name
+Cocorelle
+is_in
+Draguignan
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+landuse
+residential
+482253938
+43.5349
+6.47859
+5
+8311086
+krysst
+16038
+2011-06-01T15:06:38Z
+4
+name
+Les Tours
+is_in
+Draguignan
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+landuse
+residential
+482713990
+43.5306
+6.47797
+5
+8311086
+krysst
+16038
+2011-06-01T15:06:38Z
+3
+name
+Les Hauts Négadis
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+landuse
+residential
+482713996
+43.5321
+6.48384
+7
+10022474
+sergio7826
+411998
+2011-12-03T08:08:38Z
+4
+name
+Sainte-Barbe
+is_in
+Draguignan
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+landuse
+residential
+484338015
+43.5339
+6.45951
+5
+8311086
+krysst
+16038
+2011-06-01T15:06:40Z
+4
+name
+Le Moulin Neuf
+is_in
+Draguignan
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+landuse
+residential
+484338165
+43.5327
+6.45344
+6
+10022524
+sergio7826
+411998
+2011-12-03T08:21:04Z
+3
+name
+Saint-Lazare
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+landuse
+residential
+485249648
+43.5418
+6.45373
+6
+8311086
+krysst
+16038
+2011-06-01T15:06:38Z
+3
+name
+Morgay
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+landuse
+residential
+485249825
+43.5435
+6.44651
+6
+8311086
+krysst
+16038
+2011-06-01T15:06:36Z
+3
+name
+La Garrigue
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+landuse
+residential
+486561460
+43.5409
+6.46001
+5
+8311086
+krysst
+16038
+2011-06-01T15:06:40Z
+4
+name
+Clos Jean Aicard
+is_in
+Draguignan
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+landuse
+residential
+486809272
+43.5416
+6.46307
+5
+8311086
+krysst
+16038
+2011-06-01T15:06:42Z
+4
+name
+Les Jardins
+is_in
+Draguignan
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+landuse
+residential
+486809275
+43.5426
+6.46474
+5
+8311086
+krysst
+16038
+2011-06-01T15:06:38Z
+4
+name
+Rialle
+is_in
+Draguignan
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+landuse
+residential
+486809277
+43.5435
+6.45914
+5
+8311086
+krysst
+16038
+2011-06-01T15:06:40Z
+3
+name
+L'Esperon
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+landuse
+residential
+486809510
+43.545
+6.46019
+5
+8311086
+krysst
+16038
+2011-06-01T15:06:40Z
+3
+name
+Les Capucins
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+landuse
+residential
+486809615
+43.5489
+6.46151
+6
+8311086
+krysst
+16038
+2011-06-01T15:06:41Z
+4
+name
+Folletière
+is_in
+Draguignan
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+landuse
+residential
+487091461
+43.4615
+6.47229
+4
+8311086
+krysst
+16038
+2011-06-01T15:08:49Z
+3
+name
+Combaud
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+landuse
+residential
+487091794
+43.4583
+6.47132
+4
+8311086
+krysst
+16038
+2011-06-01T15:08:50Z
+4
+name
+La Garrigue
+is_in
+Les Arcs
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+landuse
+residential
+487222220
+43.5453
+6.45638
+5
+8311086
+krysst
+16038
+2011-06-01T15:06:36Z
+4
+name
+La Louve
+is_in
+Draguignan
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+landuse
+residential
+487222339
+43.5464
+6.45789
+5
+8311086
+krysst
+16038
+2011-06-01T15:06:41Z
+4
+name
+Blancon
+is_in
+Draguignan
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+landuse
+residential
+487222494
+43.5502
+6.45795
+6
+8311086
+krysst
+16038
+2011-06-01T15:06:36Z
+4
+name
+Collombaille
+is_in
+Draguignan
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+landuse
+residential
+493231663
+43.5489
+6.46534
+5
+8311086
+krysst
+16038
+2011-06-01T15:06:36Z
+3
+name
+Le Coutelet
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+landuse
+residential
+503901831
+43.5242
+6.48484
+5
+8311086
+krysst
+16038
+2011-06-01T15:06:35Z
+3
+name
+Les Bas Négadis
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+landuse
+residential
+819771982
+43.7099
+5.83304
+4
+64417915
+Pa413
+688484
+2018-11-12T18:59:04Z
+5
+addr:postcode
+83560
+addr:street
+La Bastidonne
+landuse
+residential
+addr:city
+Vinon-sur-Verdon
+name
+La Bastidonne

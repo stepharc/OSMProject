@@ -1,0 +1,94 @@
+297191515
+43.1037
+5.9257
+5
+58458346
+MatthieuMartin
+46239
+2018-04-26T21:48:00Z
+8
+name
+FNRS III
+image
+File:FRNS III (HDR) 01.jpg
+wikipedia
+fr:Bathyscaphe#Le FNRS 3
+note
+To be defined exactly
+ship:type
+submarine
+historic
+ship
+alt_name
+Bathyscaphe
+tourism
+attraction
+360297738
+43.3396
+6.04932
+7
+10087138
+sergio7826
+411998
+2011-12-11T08:13:44Z
+2
+name
+Source Saint-Martin
+tourism
+attraction
+957692324
+43.6542
+6.27109
+2
+6663822
+krysst
+16038
+2010-12-14T23:46:19Z
+3
+natural
+tree
+tourism
+attraction
+description
+Chênes blancs séculaires
+981162236
+43.332
+6.04001
+4
+10087138
+sergio7826
+411998
+2011-12-11T08:13:44Z
+2
+name
+Source Saint-Médard
+tourism
+attraction
+1038795793
+43.656
+6.26792
+1
+6663822
+krysst
+16038
+2010-12-14T23:46:18Z
+3
+natural
+tree
+tourism
+attraction
+description
+Chênes blancs séculaires
+1050190765
+43.3924
+6.34954
+1
+6711240
+Fred
+133630
+2010-12-19T22:35:15Z
+2
+name
+Moulin à huile médieval
+tourism
+attraction

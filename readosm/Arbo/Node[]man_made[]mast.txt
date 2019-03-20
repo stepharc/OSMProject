@@ -1,0 +1,15 @@
+299357764
+43.1032
+6.34877
+4
+55605356
+gnrc69
+99872
+2018-01-20T14:59:34Z
+3
+man_made
+mast
+name
+TDF
+tower:type
+communication

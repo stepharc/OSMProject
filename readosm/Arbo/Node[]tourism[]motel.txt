@@ -1,0 +1,15 @@
+497746360
+43.1062
+5.85061
+1
+2501867
+leblatt
+39302
+2009-09-16T13:20:45Z
+3
+name
+Formule 1
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2009
+tourism
+motel

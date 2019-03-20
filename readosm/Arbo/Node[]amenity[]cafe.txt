@@ -1,0 +1,355 @@
+290560622
+43.1008
+5.88508
+6
+15338493
+leblatt
+39302
+2013-03-12T11:16:48Z
+3
+name
+Brasserie des Chantiers
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2007
+amenity
+cafe
+290560626
+43.101
+5.88376
+6
+2147814
+leblatt
+39302
+2009-08-14T21:42:48Z
+3
+name
+L'Entracte
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2007
+amenity
+cafe
+290560628
+43.1007
+5.88274
+4
+2500116
+leblatt
+39302
+2009-09-16T09:43:44Z
+3
+name
+Le Seynois
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2007
+amenity
+cafe
+291447817
+43.0989
+5.88438
+7
+15756553
+Manu1400
+181135
+2013-04-16T22:50:35Z
+3
+name
+Bar du Rond-point
+amenity
+cafe
+vending
+cigarettes
+293773446
+43.1186
+5.88396
+2
+641248
+leblatt
+39302
+2008-09-15T21:15:00Z
+2
+name
+La Pyro
+amenity
+cafe
+294009241
+43.103
+5.82089
+3
+701479
+leblatt
+39302
+2008-09-26T13:54:08Z
+2
+shop
+tobacco
+amenity
+cafe
+294143904
+43.1006
+5.88266
+6
+28913216
+Syl
+224440
+2015-02-17T16:46:06Z
+3
+name
+La Civette Artistique
+amenity
+cafe
+tobacco
+yes
+295788357
+43.1168
+5.8781
+3
+14737158
+olivier_griffet_83660_carnoules
+309268
+2013-01-21T19:13:37Z
+2
+name
+Bar de l'Hippodrome
+amenity
+cafe
+297193954
+43.1008
+5.88049
+1
+638836
+leblatt
+39302
+2008-09-15T12:16:31Z
+1
+amenity
+cafe
+297614951
+43.0824
+5.87896
+1
+653370
+leblatt
+39302
+2008-09-17T01:31:34Z
+2
+name
+Le Pagnol
+amenity
+cafe
+443635727
+43.7299
+6.57263
+2
+7915038
+Quietdream
+387801
+2011-04-20T10:53:31Z
+2
+name
+Le B'Art j'aime
+amenity
+cafe
+457333981
+43.1395
+5.84826
+2
+16870256
+Nimbustier
+152729
+2013-07-08T08:44:35Z
+2
+name
+Le Moderne
+amenity
+cafe
+476008314
+43.0989
+5.80987
+1
+2294685
+leblatt
+39302
+2009-08-28T20:45:30Z
+2
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2009
+amenity
+cafe
+483425086
+43.123
+5.82693
+1
+2372179
+leblatt
+39302
+2009-09-04T18:28:37Z
+2
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2009
+amenity
+cafe
+487104492
+43.1206
+6.13105
+2
+3174890
+EtienneChoveBot
+183561
+2009-11-21T11:15:52Z
+3
+name
+La Caravelle
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+amenity
+cafe
+487104493
+43.1206
+6.13137
+3
+54966598
+baptistemm
+343811
+2017-12-27T20:36:57Z
+3
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+amenity
+cafe
+name
+Maison Sarroche
+487104494
+43.1217
+6.13002
+6
+63519015
+baptistemm
+343811
+2018-10-14T20:02:36Z
+9
+addr:housenumber
+13
+amenity
+cafe
+addr:city
+Hyères
+phone
++33 4 94 61 14 88
+addr:postcode
+83400
+outdoor_seating
+yes
+name
+Music All Cafe
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+addr:street
+Rue de la République
+487104496
+43.1205
+6.12843
+4
+61401326
+F@bienne
+1706294
+2018-08-06T11:48:37Z
+7
+amenity
+cafe
+name
+La Régence
+addr:postcode
+83400
+outdoor_seating
+yes
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+smoking
+outside
+addr:street
+Place du Portalet
+487104497
+43.1186
+6.12832
+4
+41128481
+Guillaume Mortier
+1429581
+2016-07-30T17:21:02Z
+3
+name
+Le Monté Carlo
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+amenity
+cafe
+521190832
+43.0815
+5.88563
+1
+2746391
+leblatt
+39302
+2009-10-05T08:09:33Z
+3
+name
+Bar Mar Vivo
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2009
+amenity
+cafe
+864841730
+43.3856
+6.09695
+2
+5519055
+Jean CARTIER
+60065
+2010-08-17T16:08:23Z
+2
+name
+L'oasis
+amenity
+cafe
+948099940
+43.122
+5.9362
+6
+33357109
+bot_gileri
+2772976
+2015-08-15T18:49:42Z
+10
+name
+Le Cybernaute-VEVB
+phone
++33 9 75 70 19 30
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010
+amenity
+cafe
+smoking
+no
+website
+http://vevb83.pagesperso-orange.fr/
+wheelchair
+no
+opening_hours
+Mo-Sa 09:00-20:00,14:00-17:00
+internet_access
+yes
+internet_access:fee
+yes
+1007802418
+43.6239
+6.695
+2
+9549985
+sergio7826
+411998
+2011-10-13T18:58:42Z
+2
+name
+Bistrot Fayencois
+amenity
+cafe

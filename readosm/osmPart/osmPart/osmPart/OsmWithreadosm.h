@@ -46,6 +46,13 @@ public:
 	//Arbo getArbo();
 
 	/*!
+	 *  \brief Deletes automatically generated files.
+	 *
+	 *   The constructor creates files to optimize the parsing time of the information.
+	 */
+	void deleteFiles(void);
+
+	/*!
 	 *  \brief Parse and store in RAM according to the given category.
 	 *
 	 *  Method that parses the osm file and stores the objects according to their category,
@@ -60,6 +67,21 @@ public:
 	 *  \param Relations : search category for Relation.
 	 */
 	void initWithCat(std::vector<std::string>, std::vector<std::string>, std::vector<std::string>);
+
+	/*!
+	 *  \brief Parse and store in RAM according to the given tags.
+	 *
+	 *  Method that parses the osm file and stores the objects according to their tag,
+	 *  tag given by the user via std :: vector <std :: string> where the first field of the vector
+	 *  is the key of the category, and the second its value.
+	 *  To perform a keyless or valueless search, it is necessary to put the character string empty for one of the two parameters
+	 *  <"", "something"> look for the "something" value associated with any key, for example.
+	 *
+	 *  \param Nodes : search tag for Nodes.
+	 *  \param Ways : search tag for Way.
+	 *  \param Relations : search tag for Relation.
+	 */
+	void initWithTags(std::vector<std::string>, std::vector<std::string>, std::vector<std::string>);
 
 	//Init with the latitude and the longitude
 	//void initWithll(double, double);

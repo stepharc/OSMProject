@@ -1,0 +1,41 @@
+299358742
+43.109
+6.3563
+2
+779248
+gregus_
+67547
+2009-03-10T20:02:09Z
+4
+name
+Club de tennis du Gaou Benat
+sport
+tennis
+leisure
+sports_centre
+created_by
+JOSM
+300246523
+43.1108
+5.9584
+1
+703599
+Anolnx
+6217
+2008-09-27T10:53:08Z
+1
+sport
+tennis
+735246953
+43.1241
+5.83108
+1
+4708537
+Philippe - Var
+149639
+2010-05-15T17:25:24Z
+2
+name
+Tennis Municipal Ollioules
+sport
+tennis

@@ -1,0 +1,13 @@
+1052509197
+43.3584
+6.3281
+1
+6719871
+Fred
+133630
+2010-12-20T20:49:21Z
+2
+name
+Camping Municipal
+tourism
+caravan_site

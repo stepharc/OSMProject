@@ -1,0 +1,475 @@
+280309695
+43.0263
+6.24248
+6
+65388302
+oc-OpenStreetMap
+4224320
+2018-12-11T20:24:01Z
+4
+name:oc
+Cap dei Mèdas
+source:name:oc
+ieo-bdtopoc
+natural
+cape
+name
+Cap des Mèdes
+280309852
+43.0133
+6.21735
+6
+65388302
+oc-OpenStreetMap
+4224320
+2018-12-11T20:24:01Z
+2
+natural
+cape
+name
+Pointe du Lequin
+281163616
+43.0043
+6.25176
+7
+65918935
+oc-OpenStreetMap
+4224320
+2018-12-31T18:07:47Z
+4
+name:oc
+Poncha de la Galeassa
+source:name:oc
+ieo-bdtopoc
+natural
+cape
+name
+Pointe de la Galère
+281163617
+42.9974
+6.24563
+4
+65388302
+oc-OpenStreetMap
+4224320
+2018-12-11T20:24:01Z
+4
+name:oc
+Poncha dau Gabian
+source:name:oc
+ieo-bdtopoc
+natural
+cape
+name
+Pointe du Gabian
+281163618
+42.9824
+6.19942
+5
+65919037
+oc-OpenStreetMap
+4224320
+2018-12-31T18:13:10Z
+4
+name:oc
+Cap d'Armas
+source:name:oc
+ieo-bdtopoc
+natural
+cape
+name
+Cap d'Arme
+281163619
+43.0148
+6.24879
+6
+65388302
+oc-OpenStreetMap
+4224320
+2018-12-11T20:24:01Z
+4
+name:oc
+Poncha dau Gròs Bauç
+source:name:oc
+ieo-bdtopoc
+natural
+cape
+name
+Pointe du Gros Bauç
+281163620
+42.994
+6.23055
+3
+65388302
+oc-OpenStreetMap
+4224320
+2018-12-11T20:24:01Z
+4
+name:oc
+Poncha dei Salins
+source:name:oc
+ieo-bdtopoc
+natural
+cape
+name
+Pointe des Salins
+281163621
+42.9904
+6.22024
+4
+66887384
+manuel-128
+8357704
+2019-02-03T21:57:19Z
+5
+loc_name
+pouncho de la Oustau de Diéu
+name:oc
+Poncha de l'Ostau de Dieu
+natural
+cape
+name
+pointe de la Oustau de Diéu
+source:name:oc
+ieo-bdtopoc
+289818959
+43.0459
+5.85964
+3
+65401281
+oc-OpenStreetMap
+4224320
+2018-12-12T08:50:40Z
+4
+name:oc
+Cap Cessiech
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre;mise à jour : 2007
+natural
+cape
+name
+Cap Sicié
+289818960
+43.0467
+5.84406
+4
+65401751
+oc-OpenStreetMap
+4224320
+2018-12-12T09:07:25Z
+4
+name:oc
+Cap Vièlh
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2007
+natural
+cape
+name
+Pointe du Cap Vieux
+497746553
+43.0486
+5.86078
+2
+65401281
+oc-OpenStreetMap
+4224320
+2018-12-12T08:50:40Z
+3
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre;mise à jour : 2009
+natural
+cape
+name
+Grande Pointe des Jonquiers
+497746554
+43.0518
+5.86276
+2
+65401281
+oc-OpenStreetMap
+4224320
+2018-12-12T08:50:40Z
+3
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre;mise à jour : 2009
+natural
+cape
+name
+Pointe des Jonquiers
+497746556
+43.0654
+5.87181
+2
+65401035
+oc-OpenStreetMap
+4224320
+2018-12-12T08:43:04Z
+4
+name:oc
+Poncha dau Bauç Roge
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre;mise à jour : 2009
+natural
+cape
+name
+Pointe du Bauç Rouge
+497746560
+43.0594
+5.86551
+2
+65401118
+oc-OpenStreetMap
+4224320
+2018-12-12T08:45:29Z
+3
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre;mise à jour : 2009
+natural
+cape
+name
+Pointe de Saint-Selon
+497746563
+43.0582
+5.86433
+2
+65401118
+oc-OpenStreetMap
+4224320
+2018-12-12T08:45:29Z
+4
+name:oc
+Poncha dau Malpasset
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre;mise à jour : 2009
+natural
+cape
+name
+Pointe de Malpasset
+497746566
+43.0623
+5.86839
+3
+65401035
+oc-OpenStreetMap
+4224320
+2018-12-12T08:43:04Z
+5
+name:oc
+Poncha dau Grand Bauç
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre;mise à jour : 2009
+name:fr
+Pointe de la Grande Falaise
+natural
+cape
+name
+Pointe du Grand Bauç
+497773091
+43.0703
+5.77861
+2
+65401751
+oc-OpenStreetMap
+4224320
+2018-12-12T09:07:25Z
+3
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre;mise à jour : 2009
+natural
+cape
+name
+Pointe du Coucoussa
+500038615
+43.0577
+5.81824
+2
+65401751
+oc-OpenStreetMap
+4224320
+2018-12-12T09:07:25Z
+3
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre;mise à jour : 2009
+natural
+cape
+name
+Pointe du Mal Dormi
+500116820
+43.0539
+5.82156
+3
+65438157
+ChrissW-R1
+251543
+2018-12-13T11:02:39Z
+5
+name:oc
+Cap de l’Esperon
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre;mise à jour : 2009
+name:fr
+Pointe de l'Éperon
+natural
+cape
+name
+Pointe de l'Éperon
+500116825
+43.0652
+5.8073
+2
+65401751
+oc-OpenStreetMap
+4224320
+2018-12-12T09:07:25Z
+4
+name:oc
+Poncha dau Morret
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre;mise à jour : 2009
+natural
+cape
+name
+Pointe du Mourret
+500116826
+43.0669
+5.80321
+2
+65401751
+oc-OpenStreetMap
+4224320
+2018-12-12T09:07:25Z
+4
+name:oc
+Poncha de la Gardiòla
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre;mise à jour : 2009
+natural
+cape
+name
+Pointe de la Gardiole
+608102625
+43.0123
+6.22222
+5
+65388302
+oc-OpenStreetMap
+4224320
+2018-12-11T20:24:01Z
+2
+natural
+cape
+name
+Pointe de l'Alycastre
+630368685
+43.0058
+6.19345
+6
+65388302
+oc-OpenStreetMap
+4224320
+2018-12-11T20:24:01Z
+4
+name:oc
+Poncha Prima
+source:name:oc
+ieo-bdtopoc
+natural
+cape
+name
+Pointe Prime
+630369007
+43.0039
+6.19458
+3
+65388302
+oc-OpenStreetMap
+4224320
+2018-12-11T20:24:01Z
+4
+name:oc
+Poncha dau Mau Bosquet
+source:name:oc
+ieo-bdtopoc
+natural
+cape
+name
+Pointe de Maubousquet
+632636487
+43.0087
+6.17253
+3
+65388302
+oc-OpenStreetMap
+4224320
+2018-12-11T20:24:01Z
+4
+name:oc
+Cap Rosset
+source:name:oc
+ieo-bdtopoc
+natural
+cape
+name
+Cap Rousset
+632727238
+42.996
+6.17252
+2
+65388302
+oc-OpenStreetMap
+4224320
+2018-12-11T20:24:02Z
+2
+natural
+cape
+name
+Pointe des Carrières
+647666668
+42.992
+6.18452
+3
+65388302
+oc-OpenStreetMap
+4224320
+2018-12-11T20:24:02Z
+2
+natural
+cape
+name
+Pointe du Tamaris
+647679711
+42.9927
+6.2272
+2
+65388302
+oc-OpenStreetMap
+4224320
+2018-12-11T20:24:02Z
+4
+name:oc
+Poncha dau Ronflador
+source:name:oc
+ieo-bdtopoc
+natural
+cape
+name
+Pointe du Ronflador
+694117176
+43.0274
+6.09741
+5
+66887384
+manuel-128
+8357704
+2019-02-03T21:57:19Z
+5
+loc_name
+Cap de Perd-les-Barrils
+name:oc
+Cap d'Escampa Barrius
+natural
+cape
+name
+Cap d'Escampo-Barriou
+source:name:oc
+ieo-bdtopoc

@@ -1,0 +1,21 @@
+535610635
+43.2082
+6.62211
+2
+48433644
+thasos
+1875394
+2017-05-05T17:58:55Z
+3
+name
+Vignerons de Ramatuelle
+shop
+beverages
+opening_hours
+"Octobre à Mars : De 8h30 à 12h et de 14h à 18h.
+
+Avril à Juin : De 8h30 à 12h et de 14h à 18h30.
+
+Juillet et Août : De 8h30 à 19h sans interruption. Dimanche et jours fériés de 10h à 13h et de 16h à 19h.
+
+Septembre : De 8h30 à 12h30 et de 14h30 à 19h"

@@ -1,0 +1,363 @@
+26858517
+43.3989
+6.67528
+2
+17033187
+Marcussacapuces91 - Cadastre
+889270
+2013-07-21T09:55:40Z
+2
+name
+Domaine Bergerie
+tourism
+camp_site
+26858549
+43.4164
+6.70583
+3
+62166084
+tanonin
+1195061
+2018-08-31T09:37:50Z
+3
+tourism
+camp_site
+description
+4 étoiles
+name
+Etoile d'Argens
+26858582
+43.2408
+6.57341
+4
+40801180
+PSR-2
+3679537
+2016-07-17T16:03:12Z
+8
+name
+Parc Saint-James-Montana
+phone
++33 4 94 55 20 20
+stars
+4
+tourism
+camp_site
+addr:city
+Gassin
+addr:street
+Route du Bourrian
+addr:postcode
+83580
+addr:housenumber
+370
+26858684
+43.7753
+6.20746
+7
+65994298
+jepee
+9292967
+2019-01-03T16:25:30Z
+6
+addr:city
+Les Salles-sur-Verdon
+addr:postcode
+83630
+contact:website
+http://www.camping-la-source.eu/
+contact:phone
++33 4 94 70 20 40
+tourism
+camp_site
+name
+Camping La Source
+26858757
+43.4766
+6.63872
+3
+18200940
+sergio7826
+411998
+2013-10-05T18:59:48Z
+2
+name
+Lei Suves
+tourism
+camp_site
+26858760
+43.1724
+5.69626
+7
+17858079
+gbassiere
+118678
+2013-09-15T20:51:03Z
+4
+name
+Les Baumelles
+stars
+3
+tourism
+camp_site
+website
+http://www.campinglesbaumelles.fr/
+26858771
+43.1215
+6.23473
+3
+66023143
+jepee
+9292967
+2019-01-04T14:19:55Z
+3
+website
+http://www.campinglesmoulieres.com
+tourism
+camp_site
+name
+Les Moulieres
+26858797
+43.5872
+6.66917
+1
+247310
+Sven S_
+2566
+2007-03-28T17:12:49Z
+3
+name
+Lou Cantaire
+tourism
+camp_site
+created_by
+JOSM
+26858854
+43.1189
+6.24526
+2
+65935031
+jepee
+9292967
+2019-01-01T15:31:53Z
+2
+tourism
+camp_site
+name
+Miramar
+26858929
+43.3664
+6.71171
+3
+15338644
+Stéphane ROLLE
+639534
+2013-03-12T11:31:53Z
+3
+name
+Au Paradis des Campeurs
+stars
+4
+tourism
+camp_site
+26858943
+43.4508
+6.63361
+2
+17033187
+Marcussacapuces91 - Cadastre
+889270
+2013-07-21T09:55:40Z
+2
+name
+Pecheurs
+tourism
+camp_site
+26859005
+43.7763
+6.20905
+11
+65994197
+jepee
+9292967
+2019-01-03T16:21:43Z
+7
+addr:city
+Les Salles-sur-Verdon
+addr:postcode
+83630
+contact:website
+http://www.campinglespins.com
+contact:phone
++33 4 98102380
+tourism
+camp_site
+addr:country
+FR
+name
+Camping Les Pins
+26859026
+43.0406
+6.14278
+6
+33357109
+bot_gileri
+2772976
+2015-08-15T18:50:36Z
+9
+url
+http://www.camping-giens.com
+name
+Presqu'Île de Giens
+phone
++33 4 94 58 22 86
+tourism
+camp_site
+addr:city
+Giens, Hyères
+addr:street
+Route de la Madrague
+addr:country
+FR
+addr:postcode
+83400
+addr:housenumber
+153
+488475613
+43.5454
+6.43781
+2
+3182458
+EtienneChoveBot
+183561
+2009-11-22T05:14:05Z
+2
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+tourism
+camp_site
+697325550
+43.0415
+6.12814
+3
+15701257
+aymericpathier
+744742
+2013-04-12T13:25:43Z
+4
+name
+Camping International
+stars
+4
+source
+office de tourisme d'hyères
+tourism
+camp_site
+702376282
+43.0396
+6.12641
+2
+15701257
+aymericpathier
+744742
+2013-04-12T13:25:43Z
+4
+name
+Camping Clair de Lune
+stars
+4
+source
+Office de tourisme d'hyères
+tourism
+camp_site
+831746467
+43.1604
+6.43419
+1
+5306385
+Johannes123
+32951
+2010-07-24T19:14:43Z
+1
+tourism
+camp_site
+902361570
+43.0403
+6.14592
+3
+5878988
+Rosty
+41431
+2010-09-26T10:16:35Z
+3
+name
+Les Roseaux
+note:de
+Teil von dem Campingplatz "Presqu’ile de Giens"
+tourism
+camp_site
+902585611
+43.0396
+6.10352
+3
+66485156
+Emilio Eugenio
+3842919
+2019-01-20T20:52:38Z
+10
+addr:housenumber
+545
+addr:city
+La Madrague, Hyeres
+url
+http://www.camping-olbia.com
+addr:postcode
+83400
+name
+Camping Olbia
+phone
++33494582196
+internet_access
+wlan
+tourism
+camp_site
+email
+info@camping-olbia.com
+addr:street
+Avenue René de Knyff
+930226446
+43.7639
+6.2216
+5
+49178931
+baptistemm
+343811
+2017-06-01T21:56:03Z
+7
+name
+Camping de Chanteraine
+tourism
+camp_site
+addr:city
+Aiguines
+addr:country
+FR
+addr:postcode
+83630
+contact:phone
++33 4 94 70 22 16
+contact:website
+http://www.camping-chanteraine.com
+1052509194
+43.3584
+6.32775
+1
+6719871
+Fred
+133630
+2010-12-20T20:49:21Z
+2
+name
+Camping Municipal
+tourism
+camp_site

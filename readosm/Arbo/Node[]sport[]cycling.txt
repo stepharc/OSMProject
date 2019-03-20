@@ -1,0 +1,15 @@
+749784296
+43.756
+6.76316
+1
+4815756
+stac
+259262
+2010-05-26T18:55:03Z
+3
+name
+La Moulière
+sport
+cycling
+leisure
+pitch

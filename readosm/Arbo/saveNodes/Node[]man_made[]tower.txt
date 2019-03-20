@@ -1,0 +1,107 @@
+297615125
+43.053
+5.84568
+5
+2657856
+leblatt
+39302
+2009-09-27T20:59:57Z
+5
+name
+Emetteur de Toulon - Cap Sicié
+height
+82
+man_made
+tower
+operator
+Télédiffusion De France
+tower:construction
+lattice
+300264772
+43.1845
+5.90722
+3
+3135854
+EtienneChoveBot
+183561
+2009-11-16T20:45:16Z
+3
+name
+Station transmission
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+man_made
+tower
+449077884
+43.0796
+5.94149
+7
+53596270
+pyrog
+270456
+2017-11-07T23:29:47Z
+4
+ele
+122
+man_made
+tower
+alt_name
+Vigie Cépet
+name
+Sémaphore Saint-Mandrier
+615730339
+42.9841
+6.20571
+5
+44296398
+JBacc1
+704348
+2016-12-10T04:33:49Z
+2
+man_made
+tower
+tower:type
+communication
+624381299
+43.135
+5.8773
+2
+11711434
+user_382455
+382455
+2012-05-27T00:01:32Z
+2
+name
+Tour de la Pégoulière
+man_made
+tower
+820499455
+43.3564
+6.69632
+1
+5233995
+Jaiy
+317014
+2010-07-16T11:09:09Z
+3
+name
+Émetteur des Dolmens
+man_made
+tower
+tower:type
+communication
+820499463
+43.3506
+6.70556
+1
+5233995
+Jaiy
+317014
+2010-07-16T11:09:10Z
+3
+name
+Émetteur Place Monté-Carlo
+man_made
+tower
+tower:type
+communication

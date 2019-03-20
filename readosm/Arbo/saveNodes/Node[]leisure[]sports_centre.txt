@@ -1,0 +1,45 @@
+299358742
+43.109
+6.3563
+2
+779248
+gregus_
+67547
+2009-03-10T20:02:09Z
+4
+name
+Club de tennis du Gaou Benat
+sport
+tennis
+leisure
+sports_centre
+created_by
+JOSM
+606344828
+43.3472
+6.33244
+2
+11624182
+Fred
+133630
+2012-05-17T15:03:20Z
+3
+name
+Autodrome du Var
+sport
+motor
+leisure
+sports_centre
+745852402
+43.1346
+5.85107
+1
+4777812
+Philippe - Var
+149639
+2010-05-22T20:03:33Z
+2
+name
+Centre sportif Ollioules
+leisure
+sports_centre

@@ -1,0 +1,41 @@
+290517920
+43.064
+5.85515
+4
+62737651
+Christouf0676
+1725852
+2018-09-19T17:09:45Z
+2
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2007
+man_made
+wastewater_plant
+520011719
+43.5271
+6.45163
+3
+13719927
+MODE83
+774394
+2012-11-02T09:20:54Z
+2
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+man_made
+wastewater_plant
+828651801
+43.4964
+6.49886
+1
+5286319
+jgc
+219187
+2010-07-22T11:14:28Z
+3
+name
+Station d'épuration
+source
+cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2010
+man_made
+wastewater_plant

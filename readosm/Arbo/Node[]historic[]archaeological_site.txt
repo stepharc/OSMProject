@@ -1,0 +1,31 @@
+314106123
+43.5448
+6.45303
+3
+57086441
+phjarry
+974840
+2018-03-11T16:15:18Z
+11
+megalith_type
+dolmen
+name
+Dolmen : La Pierre de la Fée
+mhs:inscription_date
+1889
+heritage
+2
+wikipedia
+fr:Pierre de la Fée
+historic
+archaeological_site
+ref:mhs
+PA00081588
+source:heritage
+data.gouv.fr, Ministère de la Culture - 2016
+wikidata
+Q1306578
+heritage:operator
+mhs
+site_type
+megalith

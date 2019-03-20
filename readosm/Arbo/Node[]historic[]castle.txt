@@ -1,0 +1,73 @@
+299290797
+43.1003
+5.80599
+3
+24282532
+fmorel
+331938
+2014-07-21T21:09:24Z
+2
+name
+Batterie du Cap Nègre
+historic
+castle
+443633884
+43.7302
+6.57215
+3
+31566007
+Marcos Dione
+55942
+2015-05-29T15:33:56Z
+4
+name
+Château Sabran de Pontevès
+ruins
+yes
+historic
+castle
+castle_type
+defensive
+476004983
+43.1159
+5.7672
+1
+2294534
+leblatt
+39302
+2009-08-28T20:32:09Z
+3
+name
+Batterie de la Cride
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2009
+historic
+castle
+735246871
+43.1417
+5.84561
+3
+16869964
+Nimbustier
+152729
+2013-07-08T08:18:13Z
+3
+name
+Château Ollioules
+ruins
+yes
+historic
+castle
+987716735
+43.5901
+6.30174
+1
+6358722
+Bert Bos
+155462
+2010-11-13T14:45:42Z
+2
+name
+Vieux Château
+historic
+castle

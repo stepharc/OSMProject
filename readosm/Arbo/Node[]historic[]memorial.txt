@@ -1,0 +1,103 @@
+290369313
+43.1031
+5.88269
+2
+9757120
+eiger
+221846
+2011-11-06T16:49:44Z
+3
+name
+Monument aux Morts
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2007
+historic
+memorial
+446004351
+43.165
+5.87996
+2
+37008271
+Sardon29
+390314
+2016-02-04T21:05:57Z
+2
+name
+Lieutenant de vaisseau Revel
+historic
+memorial
+482894132
+43.5375
+6.46194
+2
+3174890
+EtienneChoveBot
+183561
+2009-11-21T11:04:02Z
+3
+name
+Monument aux Morts
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+historic
+memorial
+482894133
+43.5374
+6.46225
+3
+51588440
+Philippe Jarry
+974840
+2017-08-30T17:49:08Z
+3
+name
+Stèle Clémenceau
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+historic
+memorial
+745829883
+43.1513
+6.34428
+2
+59732852
+gnrc69
+99872
+2018-06-11T08:34:21Z
+6
+memorial
+statue
+name
+Saint François de Paule
+wikipedia
+fr:François de Paule
+source
+Survey 2018-06
+historic
+memorial
+wikidata
+Q315640
+819627776
+43.4727
+6.56657
+1
+5230670
+fenkys
+77280
+2010-07-15T21:30:36Z
+2
+name
+Monument aux Morts
+historic
+memorial
+1030144124
+43.7001
+6.03821
+1
+6600686
+gbassiere
+118678
+2010-12-09T22:54:48Z
+1
+historic
+memorial

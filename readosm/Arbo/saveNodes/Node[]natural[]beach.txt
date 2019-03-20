@@ -1,0 +1,75 @@
+299357509
+43.0894
+6.35888
+1
+687452
+gregus_
+67547
+2008-09-23T19:43:42Z
+3
+name
+Plage du Cap Blanc
+natural
+beach
+created_by
+JOSM
+500116821
+43.0595
+5.82017
+2
+10244758
+jcr83
+234940
+2011-12-30T12:41:20Z
+3
+name
+Plage de la Fosse
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2009
+natural
+beach
+500116824
+43.0633
+5.81651
+2
+10244758
+jcr83
+234940
+2011-12-30T12:41:21Z
+3
+name
+Plage du Trou de l'Or
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2009
+natural
+beach
+522089772
+43.0715
+5.87978
+1
+2754838
+leblatt
+39302
+2009-10-05T20:59:36Z
+3
+name
+Plage de la Verne
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2009
+natural
+beach
+522089773
+43.074
+5.88428
+2
+32865896
+PMVM
+3092280
+2015-07-25T07:36:35Z
+3
+name
+Plage de la Vernette
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre;mise à jour : 2009
+natural
+beach

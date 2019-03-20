@@ -1,0 +1,103 @@
+27604515
+43.4289
+6.7551
+13
+40005489
+jseigneuret
+675449
+2016-06-13T23:39:55Z
+3
+name
+Fréjus Autotrain
+railway
+halt
+uic_ref
+8775751
+574251991
+43.3103
+6.18823
+5
+16143952
+olivier_griffet_83660_carnoules
+309268
+2013-05-15T20:01:43Z
+3
+name
+Carnoules Les Platanes ( A.T.T.C.V. ).
+railway
+halt
+alt_name
+Point de départ du Train Touristique du Centre Var ( A.T.T.C.V. ).
+830477180
+43.4314
+6.8565
+11
+67349306
+oc-OpenStreetMap
+4224320
+2019-02-19T11:36:26Z
+9
+source:name:oc
+ieo-bdtopoc
+name
+Agay
+name:oc
+Agai
+wikipedia
+fr:Gare d'Agay
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010
+wikidata
+Q3095586
+uic_ref
+8775755
+railway
+halt
+SNCF:stop_name
+Agay
+830477186
+43.435
+6.8921
+8
+52342326
+nyuriks
+339581
+2017-09-25T01:40:10Z
+7
+uic_ref
+8775756
+name
+Anthéor - Cap-Roux
+wikipedia
+fr:Gare d'Anthéor-Cap-Roux
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010
+wikidata
+Q3095643
+railway
+halt
+SNCF:stop_name
+Anthéor-Cap-Roux
+830477187
+43.4178
+6.84425
+10
+52342326
+nyuriks
+339581
+2017-09-25T01:40:10Z
+7
+uic_ref
+8775754
+name
+Le Dramont
+wikipedia
+fr:Gare du Dramont
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010
+wikidata
+Q3098197
+railway
+halt
+SNCF:stop_name
+Le Dramont

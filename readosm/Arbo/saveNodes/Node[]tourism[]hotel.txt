@@ -1,0 +1,238 @@
+281162268
+42.9995
+6.17107
+3
+8235731
+PQR
+203835
+2011-05-24T13:52:31Z
+3
+name
+Mas du Langoustier
+tourism
+hotel
+website
+http://www.langoustier.com/
+292581346
+43.0832
+5.88158
+2
+576118
+leblatt
+39302
+2008-09-08T21:24:22Z
+4
+name
+Auberge du Loup
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2007
+amenity
+restaurant
+tourism
+hotel
+301147420
+43.1209
+5.84857
+7
+64036574
+thetornado76
+1624486
+2018-10-31T07:46:16Z
+13
+city
+La Seyne-sur-Mer
+ref:INSEE:city
+83126
+name
+Ibis Style Toulon La Seyne
+contact:email
+info@novoteltoulon.com
+addr:postcode
+83500
+contact:website
+http://www.novoteltoulon.com
+contact:phone
++33 4 94 63 09 50
+opening_day
+Toute l'année.
+source:modif
+Apidae (2017-11-21), in Opendata PACA
+stars
+4
+operator
+Accor|Novotel
+tourism
+hotel
+description:FR
+Situé près des plages, des îles, des vignobles de Bandol et à 30 mn du Circuit Paul Ricard, sa localisation centrale est idéale pour un séjour dans le Var.
+389147865
+43.1176
+5.8004
+7
+64036574
+thetornado76
+1624486
+2018-10-31T07:46:16Z
+14
+city
+Sanary-sur-Mer
+contact:fax
++33 4 94 74 69 49
+name
+Hôtel La Tour
+contact:email
+la.tour.sanary@wanadoo.fr
+addr:postcode
+83110
+contact:website
+http://www.sanary-hoteldelatour.com
+contact:phone
++33 4 94 74 10 10
+opening_day
+Du 01/01 au 30/11/2017, tous les jours.
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 23/01/2009
+source:modif
+Apidae (2017-11-21), in Opendata PACA
+stars
+4
+ref:INSEE:city
+83123
+tourism
+hotel
+description:FR
+Situation unique sur le port de Sanary.
+673065235
+43.0006
+6.2027
+4
+39080312
+Herve5
+73334
+2016-05-03T20:33:48Z
+6
+name
+L'arche
+tourism
+hotel
+addr:city
+Porquerolles
+addr:street
+Route de la Ferme
+addr:postcode
+83400
+addr:housenumber
+12
+726822569
+43.1838
+5.69013
+8
+64036574
+thetornado76
+1624486
+2018-10-31T07:46:20Z
+16
+website
+http://www.accor.com
+city
+Saint-Cyr-sur-Mer
+ref:INSEE:city
+83112
+name
+Ibis Budget
+contact:email
+h3585@accor.com
+addr:postcode
+83270
+brand
+Accor
+contact:phone
+0892 68 08 23 (Centrale de réservation)
+opening_day
+Toute l'année.
+source:modif
+Apidae (2017-11-21), in Opendata PACA
+stars
+2
+old_name
+Etap Hotel
+operator
+Ibis Budget
+tourism
+hotel
+contact:website
+http://www.ibisbudget.com
+description:FR
+Hôtel situé à proximité de tout, au milieu des vignes.
+794403888
+43.125
+6.25415
+1
+5098349
+baeuchle
+221387
+2010-06-28T15:02:57Z
+2
+name
+Odalys Agelonde
+tourism
+hotel
+987378306
+43.1396
+5.75172
+2
+50325647
+wikipole
+379745
+2017-07-16T13:03:40Z
+2
+name
+La Cigale Bleu
+tourism
+hotel
+989449542
+43.5866
+6.30771
+2
+25262039
+asherah
+158830
+2014-09-06T07:42:27Z
+11
+fax
++33 4 94 70 54 90
+name
+La Bastide de Tourtour
+wifi
+free
+email
+bastide@bastidedetourtour.com
+phone
++33 4 98 10 54 20
+stars
+4
+cuisine
+french
+tourism
+hotel
+website
+http://www.bastidedetourtour.com/
+operator
+Pavillon Hotels
+internet_access
+wlan
+1030014803
+43.6547
+6.14422
+1
+6599518
+gbassiere
+118678
+2010-12-09T20:57:34Z
+3
+url
+http://www.chenesdor-provence.com/
+name
+Les Chênes d'Or
+tourism
+hotel

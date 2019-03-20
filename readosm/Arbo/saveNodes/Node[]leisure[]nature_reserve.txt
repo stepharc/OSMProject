@@ -1,0 +1,13 @@
+771429100
+43.5864
+6.77325
+1
+4979131
+Vlad
+24247
+2010-06-13T14:27:56Z
+2
+name
+Réserve Biologique de Fondurane
+leisure
+nature_reserve

@@ -1,0 +1,21 @@
+1045254219
+43.3947
+6.33236
+4
+61653041
+nlehuby
+1424448
+2018-08-14T10:26:00Z
+6
+shop
+frozen_food
+name
+Picard
+brand
+Picard
+brand:wikidata
+Q3382454
+operator
+Picard
+brand:wikipedia
+fr:Picard Surgelés

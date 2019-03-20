@@ -1,0 +1,225 @@
+290385180
+43.0804
+5.85961
+2
+595986
+leblatt
+39302
+2008-09-10T21:38:15Z
+3
+name
+Lavoir des Moulières
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2007
+historic
+ruins
+290517707
+43.0521
+5.85592
+2
+48709880
+foxandpotatoes
+117689
+2017-05-15T18:57:36Z
+3
+name
+Sémaphore
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2007
+historic
+ruins
+294143878
+43.1015
+5.83927
+1
+550020
+leblatt
+39302
+2008-09-06T16:19:00Z
+1
+historic
+ruins
+297615121
+43.0533
+5.84733
+2
+2433753
+leblatt
+39302
+2009-09-10T09:36:23Z
+2
+name
+Tour de Garde
+historic
+ruins
+442273180
+43.0134
+6.42003
+2
+65040869
+oc-OpenStreetMap
+4224320
+2018-11-30T11:24:05Z
+4
+name:oc
+Fòrt de Pòrt Manh
+source
+Local survey 13 July 2009
+historic
+ruins
+name
+Fort de Port-Manh
+582626097
+43.1544
+5.88457
+1
+3307485
+Philippe - Var
+149639
+2009-12-06T17:33:18Z
+2
+name
+maison en ruine
+historic
+ruins
+599270565
+43.1284
+6.12676
+1
+3448759
+Balooval
+145184
+2009-12-25T15:32:20Z
+2
+name
+Potence
+historic
+ruins
+599271953
+43.1243
+6.1243
+1
+3448793
+Balooval
+145184
+2009-12-25T15:39:21Z
+2
+name
+Ancien Puit
+historic
+ruins
+609487731
+42.9958
+6.17945
+2
+44262947
+JBacc1
+704348
+2016-12-08T17:33:16Z
+2
+historic
+ruins
+description
+Ruine d'un point d'observation
+631927717
+43.4571
+6.89972
+4
+56304783
+jcr83
+234940
+2018-02-12T20:21:28Z
+2
+historic
+ruins
+name
+Chapelle Saint-Honorat
+662368712
+43.7766
+6.24415
+4
+25294156
+Noframe
+45263
+2014-09-07T19:45:22Z
+3
+name
+Vieux Château
+note
+old watchtower
+historic
+ruins
+666164340
+42.994
+6.18833
+2
+5901218
+PQR
+203835
+2010-09-28T07:28:15Z
+4
+ele
+103.7071533
+name
+La Vigie
+historic
+ruins
+wpt_description
+14-MAR-10 9:37:11AM
+670596718
+43.3907
+6.29793
+4
+45311265
+PanierAvide
+214436
+2017-01-19T22:47:44Z
+9
+ele
+308.19
+ref
+8307302 - 1
+url
+http://geodesie.ign.fr/fiches/index.php?module=e&action=fichepdf&source=carte&sit_no=8307302
+name
+Opidum
+note
+Ne pas déplacer ce point, cf. - Do not move this node, see - http://wiki.openstreetmap.org/wiki/WikiProject_France/Repères_Géodésiques#Permanence_des_rep.C3.A8res
+source
+©IGN 2010 dans le cadre de la cartographie réglementaire
+historic
+ruins
+man_made
+survey_point
+description
+Borne en granit gravée IGN - Point vu en place en 2000
+701540029
+43.3215
+6.46401
+3
+16029448
+Louis-Kenzo Cahier
+1428679
+2013-05-08T13:40:59Z
+4
+ele
+450
+name
+Le fort Freinet
+natural
+peak
+historic
+ruins
+915076442
+43.5266
+5.95892
+2
+28497011
+krysst_import
+1373972
+2015-01-30T00:52:07Z
+2
+name
+Ruines
+historic
+ruins

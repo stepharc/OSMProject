@@ -1,0 +1,50 @@
+449079810
+43.1623
+5.78683
+1
+1956233
+Gilles Corlobé
+148591
+2009-07-27T15:56:03Z
+2
+name
+Grotte du Garou
+natural
+cave_entrance
+877562865
+43.0044
+6.16939
+3
+6526273
+PQR
+203835
+2010-12-03T13:45:50Z
+2
+name
+Trou du Pirate
+natural
+cave_entrance
+877562870
+43.0042
+6.16942
+3
+5621985
+PQR
+203835
+2010-08-29T04:19:09Z
+1
+natural
+cave_entrance
+1038130955
+43.7986
+6.26259
+2
+9998177
+sergio7826
+411998
+2011-11-30T12:01:11Z
+2
+name
+Grottes de Saint-Maurin
+natural
+cave_entrance

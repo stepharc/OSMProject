@@ -1,0 +1,60 @@
+299358465
+43.1229
+6.36509
+2
+2825304
+gregus_
+67547
+2009-10-12T13:11:54Z
+2
+name
+Port de Bormes
+leisure
+marina
+299358531
+43.0923
+6.36667
+1
+687452
+gregus_
+67547
+2008-09-23T19:44:21Z
+3
+name
+Port du Pradet
+leisure
+marina
+created_by
+JOSM
+447770137
+43.2718
+6.58195
+6
+52342326
+nyuriks
+339581
+2017-09-25T01:40:01Z
+5
+wikipedia
+fr:Port Grimaud
+wikidata
+Q2065223
+place
+hamlet
+leisure
+marina
+name
+Port Grimaud
+496848992
+43.1283
+5.75162
+2
+32918517
+wikipole
+379745
+2015-07-27T21:02:29Z
+2
+name
+Port de Bendor
+leisure
+marina

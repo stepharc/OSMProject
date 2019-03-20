@@ -1,0 +1,17 @@
+1042046827
+43.0827
+5.93382
+5
+49331829
+jan_olieslagers
+44791
+2017-06-07T10:50:46Z
+4
+name
+Hélistation de Toulon-Saint-Mandrier
+source
+ourairports.com
+aeroway
+aerodrome
+alt_name
+CCMAR Mediterranee

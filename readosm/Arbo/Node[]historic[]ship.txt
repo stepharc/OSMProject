@@ -1,0 +1,25 @@
+297191515
+43.1037
+5.9257
+5
+58458346
+MatthieuMartin
+46239
+2018-04-26T21:48:00Z
+8
+name
+FNRS III
+image
+File:FRNS III (HDR) 01.jpg
+wikipedia
+fr:Bathyscaphe#Le FNRS 3
+note
+To be defined exactly
+ship:type
+submarine
+historic
+ship
+alt_name
+Bathyscaphe
+tourism
+attraction

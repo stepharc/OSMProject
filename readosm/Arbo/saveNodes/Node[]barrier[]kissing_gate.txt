@@ -1,0 +1,15 @@
+841019581
+43.2051
+6.02465
+3
+22412757
+Jepau for JOSM
+1184298
+2014-05-18T19:35:24Z
+3
+foot
+yes
+barrier
+kissing_gate
+bicycle
+no

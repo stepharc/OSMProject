@@ -1,0 +1,19 @@
+1024092172
+43.586
+6.83797
+2
+6567070
+gbassiere
+118678
+2010-12-06T19:03:49Z
+5
+name
+Fromages de chèvre De Belay
+shop
+farm
+cheese
+yes
+description
+Fromages de chèvres produits sur place
+opening_hours
+15:00-19:00

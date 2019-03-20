@@ -1,0 +1,231 @@
+294714575
+43.1172
+5.92919
+8
+27497055
+Verdy_p
+90780
+2014-12-16T01:28:01Z
+8
+source
+US NGA Pub. 113. 2010-10-22
+man_made
+lighthouse
+seamark:type
+light_minor
+seamark:light:range
+2
+seamark:light:colour
+green
+seamark:light:height
+2
+seamark:light:character
+Q
+seamark:light:reference
+E 0732
+299357507
+43.0885
+6.36286
+6
+34035640
+malcolmh
+128186
+2015-09-15T08:33:16Z
+14
+name
+Phare du Cap Blanc
+source
+US NGA Pub. 113. 2010-10-22.
+man_made
+lighthouse
+seamark:name
+Cap Benat
+seamark:type
+light_major
+seamark:light:1:range
+21
+seamark:light:1:colour
+red
+seamark:light:1:height
+60
+seamark:light:1:period
+5
+seamark:light:reference
+E 0764
+seamark:light:1:sequence
+0.2+(4.8)
+seamark:light:1:character
+Fl
+seamark:light:1:sector_end
+96
+seamark:light:1:sector_start
+207
+496228035
+43.0803
+5.76756
+6
+46298967
+JeaRRo
+187177
+2017-02-22T08:34:56Z
+25
+name
+Phare du Grand Rouveau
+source
+mise à jour : 2009;cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre
+ref:mhs
+PA83000028
+ele:mhws
+47.90
+heritage
+3
+historic
+yes
+man_made
+lighthouse
+wikidata
+Q22980642
+wikipedia
+fr:Phare du Grand Rouveau
+start_date
+C19
+seamark:type
+light_major
+lighting:range
+15 nmi
+building:height
+17
+source:heritage
+data.gouv.fr, Ministère de la Culture - 2016
+heritage:operator
+mhs
+seamark:information
+Obscured by Ile des Embiez 255°-317°.Unintensified 225°-297°.
+seamark:light:group
+2
+seamark:light:range
+15
+mhs:inscription_date
+2012-09-19
+seamark:light:colour
+white
+seamark:light:height
+45
+seamark:light:period
+6
+seamark:light:sequence
+1+(1),3+(1)
+seamark:light:character
+Oc
+seamark:light:reference
+E 0710
+670598498
+43.3102
+6.68452
+4
+57248342
+cedric GLG
+7823902
+2018-03-16T17:40:45Z
+7
+description
+Tourelle : Paratonnerre : Axe - Point vu en place en 1974
+url
+http://geodesie.ign.fr/fiches/index.php?module=e&action=fichepdf&source=carte&sit_no=83115E
+man_made
+lighthouse
+note
+Ne pas déplacer ce point, cf. - Do not move this node, see - http://wiki.openstreetmap.org/wiki/WikiProject_France/Repères_Géodésiques#Permanence_des_rep.C3.A8res
+source
+©IGN 2010 dans le cadre de la cartographie réglementaire
+ref
+83115E - 1
+name
+Cardinale de la sèche à huile
+693456483
+43.0282
+6.09681
+2
+65040109
+oc-OpenStreetMap
+4224320
+2018-11-30T11:00:30Z
+3
+name:oc
+Far d'Escampa Barrius
+man_made
+lighthouse
+name
+Phare Escampabarriu (XIXe)
+696670030
+43.0165
+6.14405
+5
+34055952
+malcolmh
+128186
+2015-09-16T07:23:55Z
+13
+source
+US NGA Pub. 113. 2010-10-22.
+man_made
+lighthouse
+seamark:name
+Ile Grand Ribaud
+seamark:type
+light_major
+seamark:information
+Obscured when bearing more than 108°, 124°-222°, when bearing less than 233°, and 262°-324°.
+seamark:light:group
+4
+seamark:light:range
+15
+seamark:light:colour
+white
+seamark:light:height
+35
+seamark:light:period
+15
+seamark:light:sequence
+1+(1.5),1+(1.5),1+(1.5),1+(6.5)
+seamark:light:character
+Fl
+seamark:light:reference
+E 0748
+938142592
+43.0465
+6.51024
+7
+65046067
+oc-OpenStreetMap
+4224320
+2018-11-30T14:17:49Z
+14
+seamark:type
+light_major
+seamark:light:1:character
+Fl
+name:oc
+Far dau Titolon
+man_made
+lighthouse
+seamark:light:1:range
+28
+source
+US NGA Pub. 113. 2010-10-22.
+seamark:light:reference
+E 0770
+seamark:light:1:sector_start
+154
+seamark:light:1:height
+70
+seamark:light:1:sector_end
+44
+seamark:light:1:colour
+white
+seamark:name
+Le Titan
+seamark:light:1:period
+5
+name
+Phare du Titan

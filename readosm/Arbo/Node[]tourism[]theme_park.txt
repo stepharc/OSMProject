@@ -1,0 +1,13 @@
+297615324
+43.0712
+5.8551
+1
+653370
+leblatt
+39302
+2008-09-17T01:32:32Z
+2
+name
+Janas Aventure
+tourism
+theme_park

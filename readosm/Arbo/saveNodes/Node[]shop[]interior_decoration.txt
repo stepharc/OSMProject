@@ -1,0 +1,15 @@
+294025623
+43.1161
+5.85396
+3
+17851024
+philippekerla
+79386
+2013-09-15T14:30:58Z
+3
+name
+Giga
+shop
+interior_decoration
+wheelchair
+yes

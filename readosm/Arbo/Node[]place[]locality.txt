@@ -1,0 +1,2060 @@
+76916849
+43.0725
+5.88269
+5
+2067195
+Gilles Corlobé
+148591
+2009-08-07T16:30:01Z
+2
+name
+Pointe de Mar-Vivo
+place
+locality
+289526529
+43.0962
+5.87309
+3
+503087
+leblatt
+39302
+2008-09-02T20:45:04Z
+3
+name
+Les Quatre Moulins
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2007
+289818962
+43.0744
+5.87818
+2
+2116257
+leblatt
+39302
+2009-08-12T09:44:37Z
+3
+name
+La Verne
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2007
+290104491
+43.097
+5.89716
+1
+364117
+leblatt
+39302
+2008-08-22T11:39:05Z
+3
+name
+La Rouve
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2007
+290223783
+43.0843
+5.89321
+1
+370167
+leblatt
+39302
+2008-08-22T19:40:14Z
+3
+name
+Le Crouton
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2007
+290385397
+43.0768
+5.86198
+1
+376759
+leblatt
+39302
+2008-08-23T14:22:00Z
+3
+name
+Le Plan d'Aub
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2007
+290553753
+43.0919
+5.87631
+1
+384411
+leblatt
+39302
+2008-08-23T23:51:54Z
+3
+name
+Sainte-Messe
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2007
+290628765
+43.1029
+5.8664
+1
+385215
+leblatt
+39302
+2008-08-24T11:12:21Z
+3
+name
+Daniel
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2007
+290646871
+43.0892
+5.86944
+1
+392567
+leblatt
+39302
+2008-08-24T12:38:05Z
+3
+name
+Gavet
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2007
+292549497
+43.0894
+5.85607
+1
+469871
+leblatt
+39302
+2008-08-31T13:05:25Z
+3
+name
+Bastian
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2007
+292991174
+43.1149
+5.85275
+1
+490342
+leblatt
+39302
+2008-09-01T21:24:39Z
+2
+name
+Léry
+place
+locality
+293011412
+43.1037
+5.8625
+1
+490342
+leblatt
+39302
+2008-09-01T22:16:34Z
+2
+name
+Le Vallon des Signes
+place
+locality
+293011617
+43.0996
+5.87383
+1
+490342
+leblatt
+39302
+2008-09-01T22:17:19Z
+2
+name
+Tortel
+place
+locality
+293011622
+43.1002
+5.86629
+1
+490342
+leblatt
+39302
+2008-09-01T22:17:20Z
+2
+name
+La Colle d'Artaud
+place
+locality
+293011745
+43.1032
+5.85478
+1
+490342
+leblatt
+39302
+2008-09-01T22:17:42Z
+2
+name
+Vignelongue
+place
+locality
+293637105
+43.0991
+5.88425
+3
+2944647
+leblatt
+39302
+2009-10-25T10:29:00Z
+2
+name
+Rond-Point Kennedy
+place
+locality
+295450186
+43.1002
+5.88977
+2
+14840718
+jcr83
+234940
+2013-01-29T21:45:04Z
+2
+name
+Les Mouissèques
+place
+locality
+295788209
+43.1077
+5.8758
+1
+604427
+leblatt
+39302
+2008-09-10T23:51:16Z
+2
+name
+Le Peyron
+place
+locality
+299358474
+43.087
+6.36401
+2
+5990503
+Vlad
+24247
+2010-10-09T00:27:09Z
+2
+name
+Cap Blanc
+place
+locality
+299359053
+43.1026
+6.36901
+2
+5990503
+Vlad
+24247
+2010-10-09T00:27:22Z
+2
+name
+Pointe de l'Esquillette
+place
+locality
+299359321
+43.0989
+6.36783
+2
+5990503
+Vlad
+24247
+2010-10-09T00:27:41Z
+2
+name
+Pointe du Pinet
+place
+locality
+299359361
+43.0979
+6.32413
+2
+5990503
+Vlad
+24247
+2010-10-09T00:27:05Z
+2
+name
+Pointe du Diable
+place
+locality
+319099258
+43.5172
+6.88959
+3
+43444103
+Guillaume Mortier
+1429581
+2016-11-06T15:44:31Z
+2
+name
+Baisse du Sablier
+place
+locality
+335974198
+43.1438
+5.97733
+2
+3137504
+EtienneChoveBot
+183561
+2009-11-16T23:35:14Z
+3
+name
+Le Prieure
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+345565091
+43.1592
+5.88646
+3
+35007366
+Sardon29
+390314
+2015-11-01T09:04:39Z
+3
+name
+Vallon des Bonnes-Herbes
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+345567265
+43.1583
+5.9071
+2
+3145031
+EtienneChoveBot
+183561
+2009-11-17T20:34:03Z
+3
+name
+L'Antrichaude
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+345623174
+43.1477
+5.91577
+2
+3145127
+EtienneChoveBot
+183561
+2009-11-17T20:41:26Z
+3
+name
+Saint-André
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+345630984
+43.161
+5.90789
+2
+3145127
+EtienneChoveBot
+183561
+2009-11-17T20:41:39Z
+3
+name
+Fournel
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+345637963
+43.1615
+5.90356
+2
+3145127
+EtienneChoveBot
+183561
+2009-11-17T20:41:47Z
+3
+name
+La Julienne
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+345641504
+43.1675
+5.90018
+2
+3145157
+EtienneChoveBot
+183561
+2009-11-17T20:43:58Z
+3
+name
+Les Baumes
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+345641508
+43.1662
+5.90042
+2
+3145157
+EtienneChoveBot
+183561
+2009-11-17T20:43:58Z
+3
+name
+Le Font de la Vigne
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+345674372
+43.1567
+5.91823
+2
+3145157
+EtienneChoveBot
+183561
+2009-11-17T20:44:14Z
+3
+name
+L'Hubac
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+345674719
+43.1626
+5.92274
+2
+3145157
+EtienneChoveBot
+183561
+2009-11-17T20:44:18Z
+3
+name
+La Verdane
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+345682003
+43.1633
+5.90901
+2
+3145206
+EtienneChoveBot
+183561
+2009-11-17T20:47:20Z
+3
+name
+La Barbe
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+345687254
+43.163
+5.91617
+2
+3145206
+EtienneChoveBot
+183561
+2009-11-17T20:47:20Z
+3
+name
+La Vallon
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+345687258
+43.1633
+5.91916
+2
+3145206
+EtienneChoveBot
+183561
+2009-11-17T20:47:20Z
+3
+name
+La Gairouarde
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+458717357
+43.0201
+6.40902
+2
+5965003
+Vlad
+24247
+2010-10-05T21:13:43Z
+3
+name
+Pointe de la Galère
+place
+locality
+source
+Local survey 13 July 2009
+458718059
+43.0146
+6.39278
+1
+2072670
+JitenshaNiko
+71304
+2009-08-08T08:36:34Z
+3
+name
+Pointe de la Palud
+place
+locality
+source
+Local survey 13 July 2009
+458718060
+43.0142
+6.4207
+1
+2072670
+JitenshaNiko
+71304
+2009-08-08T08:36:34Z
+3
+name
+Pointe de Port-Man
+place
+locality
+source
+Local survey 13 July 2009
+461121925
+43.148
+5.87634
+1
+2101462
+Gilles Corlobé
+148591
+2009-08-10T19:55:49Z
+2
+name
+Chateauvallon
+place
+locality
+475543330
+43.1355
+5.82029
+2
+2372179
+leblatt
+39302
+2009-09-04T18:28:44Z
+3
+name
+La Tourelle
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2009
+475543333
+43.1353
+5.81595
+1
+2286859
+leblatt
+39302
+2009-08-28T08:49:36Z
+3
+name
+Pierredon
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2009
+475552360
+43.1424
+5.81853
+1
+2287321
+leblatt
+39302
+2009-08-28T09:31:27Z
+3
+name
+Le Lançon
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2009
+479204078
+43.4768
+6.54629
+4
+10022419
+sergio7826
+411998
+2011-12-03T08:00:03Z
+3
+name
+Lotissement Saint-Cassien
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+482253935
+43.5432
+6.46741
+5
+8311086
+krysst
+16038
+2011-06-01T15:06:39Z
+3
+name
+Laucate
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+482253940
+43.5314
+6.47101
+9
+23966223
+sergio7826
+411998
+2014-07-05T12:37:58Z
+4
+name
+Saint-Léger
+is_in
+Draguignan
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+482785467
+43.5286
+6.47492
+6
+29491508
+sergio7826
+411998
+2015-03-15T10:42:32Z
+4
+name
+Billette
+is_in
+Draguignan
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+482893872
+43.5285
+6.46361
+9
+63728106
+oc-OpenStreetMap
+4224320
+2018-10-21T13:58:26Z
+7
+source:name:oc
+ieo-bdtopoc
+name
+Le Fournas
+name:oc
+Lo Fornàs
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+name:fr
+Le Grand Four
+place
+locality
+is_in
+Draguignan
+484197150
+43.4614
+6.47965
+4
+19447799
+RedFox
+10610
+2013-12-14T12:37:42Z
+3
+name
+La Bourgade
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+484197151
+43.4634
+6.47533
+7
+64165331
+oc-OpenStreetMap
+4224320
+2018-11-04T12:53:47Z
+6
+source:name:oc
+ieo-bdtopoc
+name
+Le Bauç
+name:oc
+Lo Bauç
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+name:fr
+La Falaise
+place
+locality
+484197152
+43.4656
+6.47736
+4
+19447799
+RedFox
+10610
+2013-12-14T12:37:48Z
+3
+name
+La Vieille Ville
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+484197153
+43.4638
+6.48145
+5
+19447799
+RedFox
+10610
+2013-12-14T12:38:15Z
+3
+name
+Saint-Roch
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+484197176
+43.4601
+6.48303
+4
+19447799
+RedFox
+10610
+2013-12-14T12:38:08Z
+3
+name
+Notre-Dame
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+484197204
+43.4587
+6.47901
+4
+19447799
+RedFox
+10610
+2013-12-14T12:38:02Z
+3
+name
+Les Moulins
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+484197367
+43.4624
+6.47472
+6
+19447799
+RedFox
+10610
+2013-12-14T12:38:15Z
+4
+name
+Saint-Martin-de-Pallières
+note
+"de Pallières" (http://www.letelegramme.com/ig/generales/france-monde/france/risque-de-confusion-sept-communes-changent-de-nom-04-08-2012-1796122.php)
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+484210715
+43.4563
+6.47669
+5
+19447799
+RedFox
+10610
+2013-12-14T12:38:02Z
+3
+name
+Les Laurons
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+484688819
+43.5338
+6.44781
+5
+8311086
+krysst
+16038
+2011-06-01T15:06:37Z
+3
+name
+Le Petit Plan
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+485579542
+43.4653
+6.4812
+3
+8231259
+krysst
+16038
+2011-05-23T22:59:57Z
+3
+name
+La Nonciade
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+487091379
+43.465
+6.48367
+4
+19447799
+RedFox
+10610
+2013-12-14T12:38:03Z
+3
+name
+Les Valettes
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+487091380
+43.4614
+6.48345
+3
+8231259
+krysst
+16038
+2011-05-23T22:59:59Z
+3
+name
+Saint-Roch Est
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+487871986
+43.5503
+6.44388
+6
+19447799
+RedFox
+10610
+2013-12-14T12:38:03Z
+3
+name
+Les Salles
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+489336774
+43.4565
+6.45807
+3
+19447799
+RedFox
+10610
+2013-12-14T12:38:03Z
+3
+name
+Les Ribas-Sud
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+489336775
+43.4544
+6.46918
+2
+3221113
+EtienneChoveBot
+183561
+2009-11-26T15:55:11Z
+3
+name
+Saint-Pierre
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+489336776
+43.4534
+6.46283
+2
+3221113
+EtienneChoveBot
+183561
+2009-11-26T15:55:11Z
+3
+name
+Escroy
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+489336777
+43.4576
+6.46606
+3
+19447799
+RedFox
+10610
+2013-12-14T12:37:23Z
+3
+name
+Bauveser
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+489336879
+43.0891
+5.87278
+2
+2504756
+leblatt
+39302
+2009-09-16T18:30:26Z
+3
+name
+Rouquier
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2009
+489494463
+43.5483
+6.4381
+6
+19447799
+RedFox
+10610
+2013-12-14T12:37:31Z
+3
+name
+Dragon
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+489494566
+43.5606
+6.43613
+4
+8311086
+krysst
+16038
+2011-06-01T15:06:40Z
+3
+name
+Saint-Michel
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+490659546
+43.1175
+5.82526
+1
+2422565
+leblatt
+39302
+2009-09-09T09:12:09Z
+3
+name
+Ferron
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2009
+490670187
+43.4526
+6.47517
+4
+19447799
+RedFox
+10610
+2013-12-14T12:37:35Z
+3
+name
+Gros Ped
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+490774994
+43.4456
+6.45955
+3
+3170494
+EtienneChoveBot
+183561
+2009-11-20T18:31:55Z
+3
+name
+Les Planions
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+490775004
+43.4483
+6.46817
+3
+3170494
+EtienneChoveBot
+183561
+2009-11-20T18:31:55Z
+3
+name
+L'Écluse
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+490775009
+43.4475
+6.47301
+5
+61558134
+alpen_wasser
+314235
+2018-08-11T05:57:52Z
+3
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+place
+locality
+name
+Bourgogne
+492034426
+43.0845
+5.84692
+1
+2433056
+leblatt
+39302
+2009-09-10T08:12:21Z
+3
+name
+Collet de Roux
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2009
+492082370
+43.5656
+6.42731
+3
+3179722
+EtienneChoveBot
+183561
+2009-11-21T21:39:14Z
+3
+name
+La Granegone
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+493443986
+43.568
+6.46002
+5
+65240992
+oc-OpenStreetMap
+4224320
+2018-12-06T14:42:31Z
+4
+name:oc
+Lei Saletas
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+place
+locality
+name
+Les Salettes
+493443990
+43.5662
+6.45091
+4
+19447799
+RedFox
+10610
+2013-12-14T12:37:56Z
+3
+name
+Le Malmont
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+494222197
+43.4458
+6.46753
+4
+19447799
+RedFox
+10610
+2013-12-14T12:37:31Z
+3
+name
+En Delà du Point
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+494222510
+43.4506
+6.4793
+4
+19447799
+RedFox
+10610
+2013-12-14T12:37:35Z
+3
+name
+Guéringiuer
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+494222724
+43.4513
+6.48856
+3
+8231259
+krysst
+16038
+2011-05-23T22:59:53Z
+3
+name
+Pont-Rout Nord
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+494222870
+43.4591
+6.4899
+3
+8231259
+krysst
+16038
+2011-05-23T22:59:56Z
+3
+name
+Les Founses
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+494223867
+43.461
+6.48565
+2
+3174890
+EtienneChoveBot
+183561
+2009-11-21T11:48:27Z
+3
+name
+Le Penteyaou
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+494223869
+43.4615
+6.49994
+2
+3180802
+EtienneChoveBot
+183561
+2009-11-21T23:11:46Z
+3
+name
+L'Oratoire Occidental
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+494223870
+43.4587
+6.49965
+2
+3182847
+EtienneChoveBot
+183561
+2009-11-22T07:33:25Z
+3
+name
+Les Basses Bréguières Ouest
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+494223871
+43.4599
+6.49604
+2
+3182847
+EtienneChoveBot
+183561
+2009-11-22T07:33:25Z
+3
+name
+Trépotin Bas
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+494223872
+43.4555
+6.48295
+3
+8231259
+krysst
+16038
+2011-05-23T22:59:54Z
+3
+name
+Peymarlier
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+494223875
+43.4543
+6.50119
+2
+3182847
+EtienneChoveBot
+183561
+2009-11-22T07:33:16Z
+3
+name
+Les Pont du Lari
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+496086905
+43.5619
+6.47328
+5
+63728376
+oc-OpenStreetMap
+4224320
+2018-10-21T14:09:53Z
+6
+source:name:oc
+ieo-bdtopoc
+name
+Mare Colle
+name:oc
+La Mala Còla
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+name:fr
+Mauvaise Colline
+place
+locality
+496086908
+43.56
+6.47928
+4
+19447799
+RedFox
+10610
+2013-12-14T12:37:55Z
+3
+name
+Le Clos de Reille
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+496086910
+43.5568
+6.48049
+4
+19447799
+RedFox
+10610
+2013-12-14T12:37:57Z
+3
+name
+Le Peirard
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+496086913
+43.5558
+6.45128
+4
+19447799
+RedFox
+10610
+2013-12-14T12:37:57Z
+3
+name
+Le Neiron
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+496086916
+43.5539
+6.47476
+4
+19447799
+RedFox
+10610
+2013-12-14T12:38:03Z
+3
+name
+Les Raillorets
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+496086919
+43.553
+6.46605
+4
+19447799
+RedFox
+10610
+2013-12-14T12:37:58Z
+3
+name
+Le Piemont
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+497746568
+43.0741
+5.89787
+1
+2501867
+leblatt
+39302
+2009-09-16T13:20:51Z
+3
+name
+Pointe Saint-Elme
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2009
+497746576
+43.0659
+5.91104
+1
+2501867
+leblatt
+39302
+2009-09-16T13:20:51Z
+3
+name
+Pointe de Maregau
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2009
+497746579
+43.0697
+5.92573
+1
+2501867
+leblatt
+39302
+2009-09-16T13:20:51Z
+3
+name
+Pointe de la Renardière
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2009
+497746580
+43.0665
+5.94387
+1
+2501867
+leblatt
+39302
+2009-09-16T13:20:51Z
+3
+name
+Pointe du Rascas
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2009
+497746581
+43.0675
+5.9467
+1
+2501867
+leblatt
+39302
+2009-09-16T13:20:51Z
+3
+name
+Cap Cépet
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2009
+497746585
+43.0739
+5.95155
+1
+2501867
+leblatt
+39302
+2009-09-16T13:20:51Z
+3
+name
+Pointe du Cannier
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2009
+498490369
+43.5337
+6.39508
+6
+19405183
+RedFox
+10610
+2013-12-12T01:25:21Z
+3
+name
+Le Pigeonnier
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+498490374
+43.5328
+6.39507
+6
+19405183
+RedFox
+10610
+2013-12-12T01:24:33Z
+3
+name
+La Conque
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+498850277
+43.1003
+5.8046
+2
+2521417
+leblatt
+39302
+2009-09-18T09:13:34Z
+2
+name
+Cap Nègre
+place
+locality
+500116818
+43.048
+5.839
+1
+2522742
+leblatt
+39302
+2009-09-18T11:51:56Z
+3
+name
+Le Coudouré
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2009
+500116819
+43.0492
+5.82957
+1
+2522742
+leblatt
+39302
+2009-09-18T11:51:56Z
+3
+name
+La Pierre de l'Autel
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2009
+506520678
+43.5208
+6.47747
+5
+8311086
+krysst
+16038
+2011-06-01T15:06:37Z
+3
+name
+Saint-Jean
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+506909059
+43.4931
+6.43937
+3
+8231259
+krysst
+16038
+2011-05-23T22:59:59Z
+3
+name
+Les Nouradons
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+506920166
+43.4929
+6.44971
+2
+3181583
+EtienneChoveBot
+183561
+2009-11-21T23:37:34Z
+3
+name
+Les Selves de Transians
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+506929126
+43.4987
+6.44711
+2
+3181583
+EtienneChoveBot
+183561
+2009-11-21T23:42:35Z
+3
+name
+Les Denis
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+506929128
+43.4971
+6.44335
+2
+3181583
+EtienneChoveBot
+183561
+2009-11-21T23:42:35Z
+3
+name
+Dandarellet
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+506985393
+43.4847
+6.47581
+3
+8231259
+krysst
+16038
+2011-05-23T22:59:58Z
+3
+name
+Les Croisères Est
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+506985394
+43.4848
+6.47188
+3
+8231259
+krysst
+16038
+2011-05-23T22:59:54Z
+3
+name
+Les Plaines
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+506985395
+43.4878
+6.46088
+3
+8231259
+krysst
+16038
+2011-05-23T22:59:57Z
+3
+name
+Selves des Arcs
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+506985396
+43.4851
+6.46
+3
+8231259
+krysst
+16038
+2011-05-23T22:59:58Z
+3
+name
+Le Puits de l'Ane
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+506985397
+43.482
+6.47397
+3
+8231259
+krysst
+16038
+2011-05-23T22:59:55Z
+3
+name
+Béou Séren
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+506985398
+43.4804
+6.47936
+2
+3177713
+EtienneChoveBot
+183561
+2009-11-21T17:20:25Z
+3
+name
+La Montée de Trans
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+506985399
+43.4793
+6.47786
+2
+3177713
+EtienneChoveBot
+183561
+2009-11-21T17:20:25Z
+3
+name
+Gorge Rasteou Nord
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+506985400
+43.4824
+6.46366
+2
+3181583
+EtienneChoveBot
+183561
+2009-11-22T00:21:19Z
+3
+name
+Les Selves de Fans
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+506985401
+43.4812
+6.46692
+2
+3177713
+EtienneChoveBot
+183561
+2009-11-21T17:20:35Z
+3
+name
+Le Clos de Terrier
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+506985402
+43.4806
+6.46191
+3
+8231259
+krysst
+16038
+2011-05-23T22:59:55Z
+3
+name
+Les Selves de Coulomp
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+506985403
+43.4796
+6.46576
+2
+3177713
+EtienneChoveBot
+183561
+2009-11-21T17:20:35Z
+3
+name
+La Rourède Nord
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+508076278
+43.5256
+6.46656
+8
+63720179
+oc-OpenStreetMap
+4224320
+2018-10-21T07:19:06Z
+6
+source:name:oc
+ieo-bdtopoc
+name
+Pissadou des Aïs
+name:oc
+Paissador deis Ais
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+name:fr
+Pâture des Ânes
+place
+locality
+508076489
+43.5249
+6.46962
+6
+29491508
+sergio7826
+411998
+2015-03-15T10:42:32Z
+3
+name
+La Pierre du Moulin
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+508076637
+43.5179
+6.47201
+5
+8311086
+krysst
+16038
+2011-06-01T15:06:42Z
+3
+name
+Chemin de Trans
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+530751818
+43.1591
+6.62151
+3
+50562227
+Couannetine
+2173660
+2017-07-25T15:31:20Z
+3
+name
+Cap Lardier
+place
+locality
+source
+local GPS survey 14.10.2009
+534349442
+43.1065
+6.29894
+2
+59101874
+gnrc69
+99872
+2018-05-19T12:49:56Z
+5
+information
+guidepost
+tourism
+information
+place
+locality
+hiking
+yes
+name
+Pointe de l'Estagnol
+632623595
+43.0082
+6.18558
+3
+58473892
+JFK73
+662440
+2018-04-27T12:17:36Z
+2
+place
+locality
+name
+Pointe du Bon Renaud
+634224511
+43
+6.16372
+3
+11355103
+Marcussacapuces91
+37548
+2012-04-19T15:29:39Z
+2
+name
+Presqu'Île du Langoustier
+place
+locality
+685098189
+43.0076
+6.23422
+2
+9666035
+Damouns
+13442
+2011-10-27T07:14:12Z
+2
+name
+Plaine de Notre-Dame
+place
+locality
+685098193
+42.9994
+6.21367
+4
+67142724
+oc-OpenStreetMap
+4224320
+2019-02-12T20:07:21Z
+4
+name:oc
+Plan de la Cortada
+source:name:oc
+ieo-bdtopoc
+place
+locality
+name
+Plaine de la Courtade
+685098195
+42.9961
+6.20174
+1
+4330435
+PQR
+203835
+2010-04-05T08:43:35Z
+2
+name
+Plaine du Village
+place
+locality
+685098196
+43.0004
+6.18562
+1
+4330435
+PQR
+203835
+2010-04-05T08:43:36Z
+2
+name
+Plaine du Brégançonnet
+place
+locality
+694169140
+43.0328
+6.17218
+2
+14731841
+aymericpathier
+744742
+2013-01-21T11:15:58Z
+2
+name
+Cap de l'Esterel
+place
+locality
+694178448
+43.0407
+6.11244
+3
+4411799
+PQR
+203835
+2010-04-13T09:11:20Z
+2
+name
+La Madrague
+place
+locality
+721838612
+43.0114
+6.23223
+5
+65650405
+oc-OpenStreetMap
+4224320
+2018-12-20T19:43:17Z
+4
+name:oc
+La Cortada
+source:name:oc
+ieo-bdtopoc
+place
+locality
+name
+La Courtade
+818678754
+43.6256
+6.90305
+1
+5224685
+STA
+18744
+2010-07-15T09:01:01Z
+3
+name
+La Frayere
+place
+locality
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2010
+874805716
+43.5575
+6.0152
+1
+5567111
+krysst
+16038
+2010-08-23T00:35:41Z
+2
+name
+Vallée des Carmes
+place
+locality
+957691214
+43.6293
+6.36096
+1
+6103997
+krysst
+16038
+2010-10-19T23:20:59Z
+2
+name
+Aire de la Jalle
+place
+locality
+987754108
+43.2564
+6.41193
+1
+6358912
+krysst
+16038
+2010-11-13T15:18:13Z
+2
+name
+Capelude
+place
+locality

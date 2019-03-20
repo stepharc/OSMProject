@@ -1,0 +1,24 @@
+529848982
+43.2472
+6.11615
+1
+2834146
+Tetramonium
+135299
+2009-10-13T10:31:37Z
+2
+source
+IGN, Service de Géodésie et Nivellement: 2006
+man_made
+water_tower
+821455409
+43.3075
+6.60461
+1
+5239753
+fenkys
+77280
+2010-07-17T06:58:28Z
+1
+man_made
+water_tower

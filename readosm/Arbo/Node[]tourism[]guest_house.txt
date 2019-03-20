@@ -1,0 +1,54 @@
+662307238
+43.7724
+6.24298
+3
+25293936
+Noframe
+45263
+2014-09-07T19:33:27Z
+2
+name
+Le Bosquet
+tourism
+guest_house
+672721829
+42.9991
+6.20354
+1
+4212006
+PQR
+203835
+2010-03-23T13:20:12Z
+2
+name
+chambres d'Hotes
+tourism
+guest_house
+845114836
+43.5
+6.02704
+2
+63960387
+ZZ29
+575934
+2018-10-28T21:09:54Z
+2
+tourism
+guest_house
+name
+Auberge de Châteauvert
+924534506
+43.3842
+6.58896
+2
+5866274
+st1974
+44793
+2010-09-24T20:26:39Z
+3
+name
+Le Mas Saint-Donat
+amenity
+restaurant
+tourism
+guest_house

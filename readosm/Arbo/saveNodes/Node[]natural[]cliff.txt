@@ -1,0 +1,26 @@
+647681486
+42.998
+6.23993
+1
+3920857
+PQR
+203835
+2010-02-20T07:32:14Z
+2
+name
+Le gros mur du Sud
+natural
+cliff
+647690424
+43.0198
+6.24497
+1
+3920857
+PQR
+203835
+2010-02-20T07:42:04Z
+2
+name
+Le Gros Mur du Nord
+natural
+cliff

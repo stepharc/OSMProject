@@ -1,0 +1,51 @@
+288922215
+43.0993
+5.88408
+2
+2500116
+leblatt
+39302
+2009-09-16T09:43:44Z
+3
+name
+Cycles Gamalero-Senequier
+shop
+bicycle
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2007
+289090562
+43.0856
+5.8578
+2
+19140218
+Christouf0676
+1725852
+2013-11-27T08:48:07Z
+7
+name
+Cycles Verzelli
+shop
+bicycle
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2007
+addr:city
+La Seyne-sur-Mer
+addr:street
+Avenue Pierre-Auguste Renoir
+addr:postcode
+83500
+addr:housenumber
+2017
+301123700
+43.121
+5.85153
+1
+720832
+leblatt
+39302
+2008-09-30T13:11:40Z
+2
+name
+Oki Bike
+shop
+bicycle

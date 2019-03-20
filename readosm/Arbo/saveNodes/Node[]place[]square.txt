@@ -1,0 +1,26 @@
+486221683
+43.2367
+6.30997
+6
+40821355
+Azhagg
+227531
+2016-07-18T15:14:13Z
+2
+name
+Place de la République
+place
+square
+486221725
+43.238
+6.31072
+4
+40821355
+Azhagg
+227531
+2016-07-18T15:14:13Z
+2
+name
+Place Martin Cesar
+place
+square

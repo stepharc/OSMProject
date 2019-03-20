@@ -1,0 +1,39 @@
+482767731
+43.4522
+6.162
+2
+3396058
+xschaeffer
+89861
+2009-12-17T18:59:38Z
+2
+name
+Château d'eau
+man_made
+reservoir_covered
+612401531
+42.9833
+6.20514
+5
+3941233
+PQR
+203835
+2010-02-22T07:26:22Z
+2
+name
+Cne PQS 5
+man_made
+reservoir_covered
+659664332
+43.001
+6.16981
+1
+4022636
+PQR
+203835
+2010-03-03T08:09:19Z
+2
+name
+Cne PQS 1
+man_made
+reservoir_covered

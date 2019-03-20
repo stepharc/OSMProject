@@ -1,0 +1,13 @@
+461150791
+43.0937
+5.83917
+3
+25653289
+GL19
+444783
+2014-09-24T20:37:10Z
+2
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009
+barrier
+bump_gate

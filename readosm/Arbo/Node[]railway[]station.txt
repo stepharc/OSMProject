@@ -1,0 +1,303 @@
+26744391
+43.1854
+5.70369
+11
+40005489
+jseigneuret
+675449
+2016-06-13T23:40:06Z
+5
+name
+Saint-Cyr - Les Lecques - La Cadière
+railway
+station
+uic_ref
+8775521
+note:railway
+Un seul tag railway=station par gare. A mettre sur un node au milieu des voies
+SNCF:stop_name
+St-Cyr-les-Lecq.la-Cad.
+27604417
+43.4319
+6.73291
+12
+40005489
+jseigneuret
+675449
+2016-06-13T23:39:55Z
+5
+name
+Fréjus
+source
+SNCF - 06/2013
+railway
+station
+uic_ref
+8775750
+note:railway
+Un seul tag railway=station par gare. A mettre sur un node au milieu des voies
+249290787
+43.2974
+6.18625
+19
+59140574
+wheelmap_visitor
+290680
+2018-05-21T14:49:30Z
+6
+uic_ref
+8775537
+name
+Carnoules
+wheelchair
+yes
+source
+SNCF - 06/2013
+operator
+SNCF
+railway
+station
+280076582
+43.1088
+6.12412
+12
+55282839
+Nikolas von Randow
+5542807
+2018-01-09T05:40:09Z
+6
+uic_ref
+87755629
+name
+Hyères
+official_name
+Hyères
+note:railway
+Un seul tag railway=station par gare. A mettre sur un node au milieu des voies
+operator
+SNCF
+railway
+station
+390534577
+43.4556
+6.48246
+11
+42453639
+A FRISETTI
+4023601
+2016-09-26T19:04:08Z
+5
+name
+Les Arcs - Draguignan
+source
+SNCF - 06/2013
+railway
+station
+uic_ref
+8775544
+note:railway
+Un seul tag railway=station par gare. A mettre sur un node au milieu des voies
+574258834
+43.4059
+6.05655
+9
+61300946
+IEO83130
+8634951
+2018-08-02T14:44:57Z
+8
+source:name:oc
+ieo-bdtopoc
+name
+Brignoles
+name:oc
+Brinhòla
+train
+yes
+ref:fr:uic8
+87755736
+operator
+ATTCV
+uic_ref
+8775573
+railway
+station
+574268995
+43.3422
+6.13055
+5
+43634831
+Gilles Corlobé
+148591
+2016-11-14T09:41:02Z
+3
+name
+Sainte-Anastasie
+railway
+station
+uic_ref
+8775571
+599293005
+43.1187
+6.01008
+10
+52342326
+nyuriks
+339581
+2017-09-25T01:40:04Z
+7
+uic_ref
+8775530
+name
+La Garde
+wikipedia
+fr:Gare de La Garde
+note:railway
+Un seul tag railway=station par gare. A mettre sur un node au milieu des voies
+wikidata
+Q3096782
+railway
+station
+SNCF:stop_name
+La Garde
+751268450
+43.1908
+6.04642
+9
+52342326
+nyuriks
+339581
+2017-09-25T01:40:08Z
+7
+uic_ref
+8775533
+name
+Solliès-Pont
+wikipedia
+fr:Gare de Solliès-Pont
+note:railway
+Un seul tag railway=station par gare. A mettre sur un node au milieu des voies
+wikidata
+Q3097763
+railway
+station
+SNCF:stop_name
+Solliès-Pont
+829527258
+43.4228
+6.77017
+12
+52726938
+Coucouf
+62548
+2017-10-08T10:17:21Z
+5
+source
+SNCF - 06/2013
+railway
+station
+note:railway
+Un seul tag railway=station par gare. A mettre sur un node au milieu des voies
+uic_ref
+8775752
+name
+Saint-Raphaël - Valescure
+830477183
+43.4163
+6.80825
+12
+40005489
+jseigneuret
+675449
+2016-06-13T23:39:52Z
+6
+name
+Boulouris sur Mer
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010
+railway
+station
+uic_ref
+8775753
+note:railway
+Un seul tag railway=station par gare. A mettre sur un node au milieu des voies
+official_name
+Boulouris-sur-Mer
+830477185
+43.4747
+6.92434
+11
+40005489
+jseigneuret
+675449
+2016-06-13T23:39:58Z
+6
+name
+Le Trayas
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010
+railway
+station
+uic_ref
+8775757
+note:railway
+Un seul tag railway=station par gare. A mettre sur un node au milieu des voies
+official_name
+Le Trayas
+892122478
+43.1996
+5.63285
+9
+40005489
+jseigneuret
+675449
+2016-06-13T23:39:57Z
+5
+name
+La Ciotat
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010
+railway
+station
+uic_ref
+8775178
+note:railway
+Un seul tag railway=station par gare. A mettre sur un node au milieu des voies
+925554982
+43.2831
+6.13845
+11
+40005489
+jseigneuret
+675449
+2016-06-13T23:40:05Z
+5
+name
+Puget-Ville
+railway
+station
+uic_ref
+8775536
+note:railway
+Un seul tag railway=station par gare. A mettre sur un node au milieu des voies
+official_name
+Puget-Ville
+1020816596
+43.3902
+6.3431
+10
+40005489
+jseigneuret
+675449
+2016-06-13T23:39:58Z
+5
+name
+Le Luc et Le Cannet
+railway
+station
+uic_ref
+8775540
+note:railway
+Un seul tag railway=station par gare. A mettre sur un node au milieu des voies
+official_name
+Le Luc-et-le-Cannet

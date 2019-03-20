@@ -1,0 +1,67 @@
+289988330
+43.0853
+5.85868
+2
+414194
+leblatt
+39302
+2008-08-26T15:20:52Z
+3
+name
+Volkswagen - Axe Automobiles
+shop
+car
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2007
+291275054
+43.094
+5.84618
+2
+2379199
+leblatt
+39302
+2009-09-05T11:55:52Z
+2
+name
+Renault - Garage du Fort
+shop
+car
+294143903
+43.1159
+5.8779
+2
+604427
+leblatt
+39302
+2008-09-10T23:51:56Z
+2
+name
+Peugeot GGV
+shop
+car
+296099814
+43.1146
+5.87278
+1
+611725
+leblatt
+39302
+2008-09-12T14:10:08Z
+2
+name
+Citroën CTO
+shop
+car
+301123650
+43.1218
+5.84797
+1
+720832
+leblatt
+39302
+2008-09-30T13:11:30Z
+2
+name
+Opel
+shop
+car

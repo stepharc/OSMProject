@@ -1,0 +1,310 @@
+289813564
+43.0854
+5.9051
+2
+2067195
+Gilles Corlobé
+148591
+2009-08-07T16:30:01Z
+3
+name
+Baie du Lazaret
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2007
+natural
+bay
+289813565
+43.0975
+5.90948
+2
+2067195
+Gilles Corlobé
+148591
+2009-08-07T16:30:01Z
+3
+name
+Anse de Balaguier
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2007
+natural
+bay
+289818961
+43.0685
+5.87324
+2
+2067195
+Gilles Corlobé
+148591
+2009-08-07T16:30:01Z
+3
+name
+Anse de Fabrégas
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2007
+natural
+bay
+289988332
+43.1087
+5.90911
+3
+2067112
+Gilles Corlobé
+148591
+2009-08-07T16:18:02Z
+3
+name
+Petite Rade
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2007
+natural
+bay
+289988335
+43.093
+5.96869
+3
+2067112
+Gilles Corlobé
+148591
+2009-08-07T16:18:02Z
+3
+name
+Grande Rade
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2007
+natural
+bay
+289988339
+43.0759
+5.8915
+3
+2421839
+leblatt
+39302
+2009-09-09T07:42:36Z
+3
+name
+Anse des Sablettes
+source
+cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2007
+natural
+bay
+292842985
+43.0816
+5.9248
+2
+2067195
+Gilles Corlobé
+148591
+2009-08-07T16:30:01Z
+2
+name
+Creux Saint-Georges
+natural
+bay
+298719444
+43.1064
+5.9745
+2
+2072072
+Gilles Corlobé
+148591
+2009-08-08T07:20:02Z
+2
+name
+Anse de Méjean
+natural
+bay
+298724592
+43.1075
+5.95642
+2
+2071717
+Gilles Corlobé
+148591
+2009-08-08T05:49:08Z
+2
+name
+Baie du Levant
+natural
+bay
+299357766
+43.1064
+6.3621
+1
+687452
+gregus_
+67547
+2008-09-23T19:43:52Z
+3
+name
+Baie du Gaou
+natural
+bay
+created_by
+JOSM
+300074345
+43.1068
+5.9482
+2
+2071717
+Gilles Corlobé
+148591
+2009-08-08T05:49:08Z
+2
+name
+Plage des Pins
+natural
+bay
+300074347
+43.1069
+5.94524
+2
+2071717
+Gilles Corlobé
+148591
+2009-08-08T05:49:08Z
+2
+name
+Plage de la Source
+natural
+bay
+300074348
+43.1067
+5.94237
+2
+2071717
+Gilles Corlobé
+148591
+2009-08-08T05:49:08Z
+2
+name
+Anse Mistral
+natural
+bay
+300074350
+43.1076
+5.94077
+2
+2071717
+Gilles Corlobé
+148591
+2009-08-08T05:49:08Z
+2
+name
+Plage du Lido
+natural
+bay
+631932576
+43.4575
+6.92131
+2
+58470218
+JFK73
+662440
+2018-04-27T09:31:01Z
+2
+natural
+bay
+name
+Calanque de Maubois
+631932593
+43.4619
+6.92276
+3
+58470218
+JFK73
+662440
+2018-04-27T09:31:01Z
+2
+natural
+bay
+name
+Calanque d'Aurelle
+631932608
+43.4697
+6.92347
+2
+58470218
+JFK73
+662440
+2018-04-27T09:31:01Z
+2
+natural
+bay
+name
+Calanque de Maupas
+632636458
+42.9852
+6.21045
+2
+58477047
+JFK73
+662440
+2018-04-27T14:07:23Z
+2
+natural
+bay
+name
+Calanque de l'Indienne
+632636465
+42.9872
+6.19514
+2
+58477047
+JFK73
+662440
+2018-04-27T14:07:23Z
+2
+natural
+bay
+name
+Gorge du Loup
+647678809
+42.9916
+6.22035
+3
+65388302
+oc-OpenStreetMap
+4224320
+2018-12-11T20:24:02Z
+5
+name:oc
+Cala Longa
+source:name:oc
+ieo-bdtopoc
+name:fr
+Calle Longue
+natural
+bay
+name
+Cala Longa
+647680638
+42.9957
+6.23205
+2
+65388302
+oc-OpenStreetMap
+4224320
+2018-12-11T20:24:02Z
+4
+name:oc
+Calanca dei Salins
+source:name:oc
+ieo-bdtopoc
+natural
+bay
+name
+Calanque des Salins
+647689225
+43.0064
+6.25034
+2
+65388302
+oc-OpenStreetMap
+4224320
+2018-12-11T20:24:02Z
+2
+natural
+bay
+name
+Calanque du Bon Dieu
