@@ -98,6 +98,12 @@ protected:
 	 * Request an unzoom on the user's camera.
 	 */
 	void ZoomOut();
+
+	//! GameMenu member.
+	/*!
+	* Open or close the game menu, based on inMenu boolean value.
+	*/
+	void GameMenu();
 	
 	//! CastTrace member.
 	/*! 
