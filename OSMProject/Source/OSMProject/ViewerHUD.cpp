@@ -4,6 +4,8 @@
 #include "Engine/Canvas.h"
 #include "Engine/GameEngine.h"
 #include "Public/CanvasItem.h"
+#include "Widgets/SWeakWidget.h"
+#include "Runtime/Engine/Classes/Engine/Engine.h"
 #include <fstream>
 
 AViewerHUD::AViewerHUD() {
@@ -14,6 +16,15 @@ AViewerHUD::AViewerHUD() {
 	showGameMenu_ = false;
 	infoBoxLines_ = 1;
 	readOSMArborescenceFile();
+}
+
+void AViewerHUD::BeginPlay() {
+	GMWidget = SNew(SSGameMenuWidget).OwnerHUDArg(this);
+	GEngine->GameViewport->AddViewportWidgetContent(
+		SNew(SWeakWidget)
+		.PossiblyNullContent(GMWidget.ToSharedRef())
+	);
+	//GMWidget->SetVisibility(EVisibility::Visible);
 }
 
 void AViewerHUD::DrawHUD()
@@ -27,6 +38,9 @@ void AViewerHUD::DrawHUD()
 
 	if (showGameMenu_) {
 		drawGameMenu();
+	}
+	else {
+		if(GMWidget->GetVisibility() != EVisibility::Hidden) GMWidget->SetVisibility(EVisibility::Hidden);
 	}
 
 	// Crosshair
@@ -76,23 +90,35 @@ void AViewerHUD::drawInfoBoxAndContent() {
 void AViewerHUD::drawGameMenu() {
 	//Game Menu Window.
 	DrawRect(
-		FLinearColor(1, 0.863, 0.725, 1),
+		FLinearColor(0.2, 0.2, 0.2, 1),
 		0,
 		0,
 		Canvas->ClipX,
 		Canvas->ClipY
 	);
 
-	//TO DO : Content
+	//Menu Content
+	if (GMWidget->GetVisibility() != EVisibility::Visible) GMWidget->SetVisibility(EVisibility::Visible);
 
 	DrawText(TEXT("Press M to quit menu."), FLinearColor::Black, (Canvas->ClipX * 0.5f) - 40, Canvas->ClipY - 40);
 }
 
+void AViewerHUD::addCatSubcatToHashmap(std::string category, std::string subcategory, std::map<std::string, std::vector<std::pair<std::string, DrawStatus>>>& hashmap) {
+	auto it = hashmap.find(category);
+	if (it != hashmap.end()) {
+		it->second.push_back(std::pair<std::string, DrawStatus>(subcategory, NOT_DRAWED));
+	}
+	else {
+		std::vector<std::pair<std::string, DrawStatus>> v { std::pair<std::string, DrawStatus>(subcategory, NOT_DRAWED) };
+		hashmap.insert(std::pair<std::string, std::vector<std::pair<std::string, DrawStatus>>>(category, v));
+	}
+}
+
 void AViewerHUD::readOSMArborescenceFile() {
 	std::string filePath = "D:\\UnrealProjects\\OSMProject\\SourceOSM\\arbo.txt";
-	std::string line;
-
-	//int subcat = 0, tline = 0, cat = 0, emptyline = 0;
+	//std::string filePath = ".\\..\\..\\SourceOSM\\arbo.txt";
+	std::string line, category, subcategory, osmentity;
+	std::map<std::string, std::vector<std::pair<std::string, DrawStatus>>> hashmap;
 
 	std::ifstream filestream(filePath, std::ios::in);
 
@@ -100,21 +126,32 @@ void AViewerHUD::readOSMArborescenceFile() {
 	{
 		while (getline(filestream, line)) {
 			if (line.find("\t\t") != std::string::npos) {
-				//subcat++;
-				if (line != "\t\t") { //not a blank line, subcat line.
-					//GEngine->AddOnScreenDebugMessage(-1, 10.0f, FColor::Red, FString(line.c_str()));
+				//not a blank line, subcategory line
+				if (line != "\t\t") {
+					subcategory = line.substr(2, std::string::npos);
+					//Initialize category/subcategory in hashmap.
+					if (osmentity.compare("Way") == 0) {
+						addCatSubcatToHashmap(category, subcategory, CatsSubcatsWays_);
+					}
+					else {
+						if (osmentity.compare("Node") == 0) {
+							addCatSubcatToHashmap(category, subcategory, CatsSubcatsNodes_);
+						}
+						else {
+							addCatSubcatToHashmap(category, subcategory, CatsSubcatsRelations_);
+						}
+					}
 				}
 			}
 			else {
 				if (line.find("\t") != std::string::npos) { //Which hashmap ? (way/node/relation)
-					//tline++;
+					osmentity = line.substr(2, line.find(']') - 2);
 				}
-				else { //cat line.
-					//cat++;
+				else { //category line.
+					category = line.substr(0, line.find(" ["));
 				}
 			}
 		}
-		//GEngine->AddOnScreenDebugMessage(-1, 30.0f, FColor::Red, TEXT("Subcats : ") + FString::FromInt(subcat) + TEXT(", Cats : ") + FString::FromInt(cat) + TEXT(", \\t lines : ") + FString::FromInt(tline) + TEXT(", empty lines : ") + FString::FromInt(emptyline));
 	}
 }
 
@@ -136,6 +173,18 @@ void AViewerHUD::setGameMenuVisibility(bool v) {
 
 bool AViewerHUD::getGameMenuVisibility() {
 	return showGameMenu_;
+}
+
+std::map<std::string, std::vector<std::pair<std::string, AViewerHUD::DrawStatus>>> AViewerHUD::getCatsSubcatsNodes() {
+	return CatsSubcatsNodes_;
+}
+
+std::map<std::string, std::vector<std::pair<std::string, AViewerHUD::DrawStatus>>> AViewerHUD::getCatsSubcatsWays() {
+	return CatsSubcatsWays_;
+}
+
+std::map<std::string, std::vector<std::pair<std::string, AViewerHUD::DrawStatus>>> AViewerHUD::getCatsSubcatsRelations() {
+	return CatsSubcatsRelations_;
 }
 
 void AViewerHUD::sendActorInfo(/* Parameter, by reference, in which it'll contain actor info */) {
