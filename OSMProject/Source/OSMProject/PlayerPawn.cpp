@@ -95,6 +95,25 @@ void APlayerPawn::Tick(float DeltaTime)
 	}
 }
 
+void APlayerPawn::GameMenu() {
+	APlayerController* const PlayerController = Cast<APlayerController>(GEngine->GetFirstLocalPlayerController(GetWorld()));
+	bool inGameMenu = Hud->getGameMenuVisibility();
+	if (inGameMenu) {
+		//Exit game menu, then exit pause.
+		Hud->setCrosshairColor(FColor::White);
+		Hud->setInGameCrosshairVisibility(true);
+		Hud->setGameMenuVisibility(false);
+		if(PlayerController != NULL) PlayerController->SetPause(false);
+	}
+	else {
+		//Pause, then show game menu.
+		if(PlayerController != NULL) PlayerController->SetPause(true);
+		Hud->setInGameCrosshairVisibility(false);
+		Hud->setCrosshairColor(FColor::Black);
+		Hud->setGameMenuVisibility(true);
+	}
+}
+
 // Called to bind functionality to input
 void APlayerPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
@@ -105,6 +124,9 @@ void APlayerPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 	PlayerInputComponent->BindAction("Raycast", IE_Pressed, this, &APlayerPawn::CastTrace);
 	PlayerInputComponent->BindAction("Hover Raycast", IE_Pressed, this, &APlayerPawn::CastHoverTrace);
 	PlayerInputComponent->BindAction("Hide/Show selected actor", IE_Pressed, this, &APlayerPawn::ChangeSelectedActorVisibility);
+
+	//This action will always trigger even if game is paused.
+	PlayerInputComponent->BindAction("Open Menu", IE_Pressed, this, &APlayerPawn::GameMenu).bExecuteWhenPaused = true;
 
 	PlayerInputComponent->BindAxis("MoveForward", this, &APlayerPawn::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &APlayerPawn::MoveRight);

@@ -19,5 +19,19 @@ public class OSMProject : ModuleRules
 		// PrivateDependencyModuleNames.Add("OnlineSubsystem");
 
 		// To include OnlineSubsystemSteam, add it to the plugins section in your uproject file with the Enabled attribute set to true
+		bEnableUndefinedIdentifierWarnings = false; //error C4668 to warning, for osmium library.
+		
+		//EXTERN DEPENDANCIES
+		//OSMIUM
+		PublicIncludePaths.Add("D:/vcpkg/installed/x86-windows/include");
+		PublicIncludePaths.Add("D:/protozero-code/include");
+		PublicIncludePaths.Add("D:/UnrealProjects/OSMProject/Dependancies/libosmium-2.15.0/include");
+		
+		//OUR OSM SOURCE FILES
+		PublicIncludePaths.Add("D:/UnrealProjects/OSMProject/SourceOSM/osmium");
+		PublicIncludePaths.Add("D:/UnrealProjects/OSMProject/SourceOSM/readosm");
+		
+		//READOSM
+		PublicAdditionalLibraries.Add("D:/vcpkg/installed/x86-windows/lib/readosm.lib");
 	}
 }
