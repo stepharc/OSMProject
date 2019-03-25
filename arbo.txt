@@ -1,3 +1,5 @@
+﻿COMMENTAIRE :			Mise à jour du lundi 25 mars <- ceci ne sera pas pris en compte, normalement
+
 aerialway [Node / Way]
 	[Node]
 		pylon
@@ -649,6 +651,7 @@ highway [Node / Way]
 		services
 			
 sidewalk [Way]
+	[Way]
 
 cycleway [Way]
 	[Way]
