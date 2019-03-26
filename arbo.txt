@@ -61,7 +61,7 @@ amenity [Node / Way]
 		fast_food
 		food_court
 		ice_cream
-	 	pub
+		pub
 		restaurant
 		college
 		kindergarten
@@ -171,11 +171,11 @@ amenity [Node / Way]
 		fast_food
 		food_court
 		ice_cream
-	 	pub
+		pub
 		restaurant
 		college
 		kindergarten
-	 	library
+		library
 		archive
 		public_bookcase
 		school
@@ -1015,7 +1015,7 @@ natural [Node / Way]
 		fell
 		bare_rock
 		scree
-	 	shingle
+		shingle
 		sand
 		mud
 		water
@@ -1584,7 +1584,7 @@ shop [Node / Way]
 		dry_cleaning
 		e-cigarette
 		funeral_directors
-	 	laundry
+		laundry
 		money_lender
 		party
 		pawnbroker
@@ -1729,7 +1729,7 @@ sport [Node / Way]
 		golf
 		gymnastics
 		handball
-	 	hapkido
+		hapkido
 		horseshoes
 		horse_racing
 		ice_hockey
