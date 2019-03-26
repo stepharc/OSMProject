@@ -18,43 +18,41 @@
 #include <string>
 #include <map>
 
-// pour la lecture des fichier non osm
+// for reading non osm files
 #include <fstream>
 
 
-// "node" qui sera intégré a l'objet
-
-/*L'idée est d'ouvrir une et une seule fois le fichier et de modifier des objet stocker dans des variables*/
+/* The idea is to open the file once and only once and to modify objects store in variables */
 
 static std::vector<Nodereadosm> myNodes;
 static std::vector<Wayreadosm> myWays;
 static std::vector<Relationreadosm> myRelations;
 
 
-// le filtre
+// for filtering with tags
 
-// Sera extrait du fichier osm, tt les nodes ayant ce tags est cette value
+// Will be extracted from the osm file, all the nodes having this tag and this value
 std::string nodesKey;
 std::string nodesValue;
 
-// Sera extrait du fichier osm, tt les ways ayant ce tags est cette value
+// Will be extracted from the osm file, all the ways having this tag and this value
 std::string waysKey;
 std::string waysValue;
 
-// Sera extrait du fichier osm, tt les relations ayant ce tags est cette value
+// Will be extracted from the osm file, all the relation having this tag and this value
 std::string relationsKey;
 std::string relationsValue;
 
 	
-// Fonction pour écrire les information d'un node dans un fichier
+// Functions for writing node information to a file
 
-// Ces trois fonctions sont pour les nodes
+// These three functions are for the nodes
 
-// Cette fonction ouvre, écrit puis ferme le fichier
+// This function opens, writes and closes the file
 void oNode(std::string fic, Nodereadosm myNode)
 {
-	// Ouverture du fichier, le fichier est créé s'il n'existe pas,
-		// mais son contenu n'est pas supprimé s'il existe
+	// Opening the file, the file is created if it does not exist,
+	// but its content is not deleted if it exists
 	std::ofstream NodeFile(fic, std::ios::out | std::ios::app);
 
 	if (NodeFile)
@@ -90,86 +88,86 @@ void oNode(std::string fic, Nodereadosm myNode)
 		std::cerr << "Impossible d'ouvrir le fichier ! > " + fic << std::endl;
 }
 
-// Cette fonction renvoie l'ensble des clés de "myNode" présent dans le fichier "arbo"
-// Avec leurs valeure correct associée (ex: < < "waterway", "stream" >, < "building" >, etc.>
+// This function returns the set of keys of "myNode" present in the file "arbo"
+// With their associated correct value (ex: <<"waterway", "stream">, <"building">, etc.>
 std::vector< std::vector<std::string>> iArboNode(std::string arbo, Nodereadosm myNode)
 {
-	// Ligne actuelle dans la lecture du fichier
+	// Current line in the file reading
 	std::string ligne;
 
-	// Nom d'une clé valide pour une catégorie
+	// Name of a valid key for a category
 	std::string keyArbo;
 
-	// Nom d'une valeur valide pour une catégorie
+	// Name of a valid value for a category
 	std::string valueArbo;
 
-	// liste des tag valide présent dans le node, contient
-	// la liste des clés valide présente dans le node
-	// la liste des valeures valide présente dans le node
-	// de la forme < <key, value>, <key, value>, <key, value> >
-	// si un des deux champs n'est pas indiqué, alors le node n'ont possède pas
+	// list of valid tags present in the node, contains
+	// the valid key list present in the node
+	// the list of valid values present in the node
+	// of the form <<key, value>, <key, value>, <key, value>>
+	// if one of the two fields is not indicated, then the node does not have
 	std::vector< std::vector<std::string>> tagsOK;
 
-	// un tag temporaire, qui sera par la suite rajouté à tagsOK
+	// a temporary tag, which will be added to tagsOK
 	std::vector<std::string> tagOK;
 
-	// si le flag vaut true, une valeure valide a était troue
-	//bool flag = false;
+	// if the flag is true, a valid value was found (retired)
+	// bool flag = false;
 
 	std::ifstream fichier(arbo, std::ios::in);
 
 	if (fichier)
 	{
 
-		// parcourir chaque ligne du fichier arbo
+		// browse each line of the arbo file
 		while (getline(fichier, ligne))
 		{
-			// Si la ligne contient "Node"
+			// If the line contains "Node"
 			//    : ligne.find("Node") != std::string::npos
-			// et qu'elle ne contient pas "\t"
+			// and it does not contain "\ t"
 			//    : ligne.find("\t") == std::string::npos
-			// alors la ligne courrante indique le nom d'une clé pour un node
+			// then the current line indicates the name of a key for a node
 			if ((ligne.find("Node") != std::string::npos)
 				&& (ligne.find("\t") == std::string::npos))
 			{
-				// On prend la catégorie de la clé
-				// Dans le fichier arbo, une clé est carractérisé
-				// par le premier mot de la phrase suivi de " [" 
+				// We take the category of the key
+				// In the arbo file, a key is characterized
+				// by the first word of the sentence followed by "["
 				keyArbo = ligne.substr(0, ligne.find(" ["));
 
-				//std::cout << keyArbo << std::endl;
+				// std::cout << keyArbo << std::endl;
 
-				// On analyse les tags du node donné
+				// We analyze the tags of the given node
 				for (Myreadosm_tag tag : myNode.getTags())
-					// Si le tag du node est valide
+					// If the tag of the node is valid
 					if (tag.getKey() == keyArbo)
 					{
-						// Alors on stock cette clé dans la liste des clé valide
+						// So we store this key in the valid key list
 						tagOK.push_back(tag.getKey());
 
 						tagsOK.push_back(tagOK);
 
-						// On cherche les valeure asscié
+						// We look for the associated value
 						getline(fichier, ligne);
 
-						// Si la ligne contient "\t[Node]"
+						// If the line contains "\t[Node]"
 						if (ligne.find("\t[Node]") != std::string::npos)
 							while (true)
 							{
 								getline(fichier, ligne);
 								if (ligne.find("\t\t") != std::string::npos)
 								{
-									// On stocke la valeur
+									// We store the value
 									valueArbo = ligne.substr(ligne.find("\t\t") + std::string("\t\t").size());
 
-									// Si le tag du node est valide
+									// If the tag of the node is valid
 									if (tag.getValue() == valueArbo)
-										// Alors on stock ce tag dans la liste des tags valide
+										// So we store tag in the valid tag list
 										tagOK.push_back(tag.getValue());
 
 									tagsOK.push_back(tagOK);
 
-									// réinitialisation de tagOK
+									// reset of "tagOK"
 									tagOK.clear();
 									tagOK.push_back(tag.getKey());
 								}
@@ -190,7 +188,7 @@ std::vector< std::vector<std::string>> iArboNode(std::string arbo, Nodereadosm m
 	return tagsOK;
 }
 
-// Cette fonction insert un node dans les fichier adéquat en fonction de sa catégorie
+// This function inserts a node in the appropriate file according to its category
 static int
 insertNode(const void *user_data, const readosm_node * node)
 {
@@ -208,7 +206,7 @@ insertNode(const void *user_data, const readosm_node * node)
 	if (user_data != NULL)
 		user_data = NULL;	/* silencing stupid compiler warnings */
 
-	// Sauvegarde du node en RAM via l'objet Nodereadosm
+	// Backing up the node in RAM via the Node Read Osm object
 
 #if defined(_WIN32) || defined(__MINGW32__)
 /* CAVEAT - M$ runtime doesn't supports %lld for 64 bits */
@@ -259,15 +257,15 @@ insertNode(const void *user_data, const readosm_node * node)
 			myNode.appendTags(myTag);
 		}
 
-	// Stockage du node dans la bonne catégorie en mémoire masse
+	// Storage of the node in the correct category in mass memory
 
-	// Stocke, pour commencer le node courrant dans le fichier des nodes
+	// Stores, to start the current "node" in the node file
 	fic = ".\\..\\..\\..\\Arbo\\Node.txt";
 	oNode(fic, myNode);
 
-	//puis, si sa catégorie est rensigné on stocke dans le fichier plus précis
+	// then, if its category is filled in, it is stored in the file more precisely
 
-	// On test la clé pour commencer
+	// We test the key to start
 	tagsOK = iArboNode(".\\..\\..\\..\\arbo.txt", myNode);
 	for (std::vector<std::string> tagOK : tagsOK)
 	{
@@ -288,13 +286,13 @@ insertNode(const void *user_data, const readosm_node * node)
 	return READOSM_OK;
 }
 
-// Ces trois fonctions sont pour les ways
+// These three functions are for the ways
 
-// Cette fonction ouvre, écrit puis ferme le fichier
+// This function opens, writes and closes the file
 void oWay(std::string fic, Wayreadosm myWay)
 {
-	// Ouverture du fichier, le fichier est créé s'il n'existe pas,
-		// mais son contenu n'est pas supprimé s'il existe
+	// Opening the file, the file is created if it does not exist,
+	// but its content is not deleted if it exists
 	std::ofstream wayFile(fic, std::ios::out | std::ios::app);
 
 	if (wayFile)
@@ -333,65 +331,65 @@ void oWay(std::string fic, Wayreadosm myWay)
 		std::cerr << "Impossible d'ouvrir le fichier !" << std::endl;
 }
 
-// Cette fonction renvoie l'ensble des clés de "myWay" présent dans le fichier "arbo"
-// Avec leurs valeure correct associée (ex: < < "waterway", "stream" >, < "building" >, etc.>
+// This function returns all the keys of "myWay" present in the file "arbo"
+// With their associated correct value (ex: <<"waterway", "stream">, <"building">, etc.>
 std::vector< std::vector<std::string>> iArboWay(std::string arbo, Wayreadosm myWay)
 {
-	// Ligne actuelle dans la lecture du fichier
+	// Current line in the file reading
 	std::string ligne;
 
-	// Nom d'une clé valide pour une catégorie
+	// Name of a valid key for a category
 	std::string keyArbo;
 
-	// Nom d'une valeur valide pour une catégorie
+	// Name of a valid value for a category
 	std::string valueArbo;
 
-	// liste des tag valide présent dans le node, contient
-	// la liste des clés valide présente dans le node
-	// la liste des valeures valide présente dans le node
-	// de la forme < <key, value>, <key, value>, <key, value> >
-	// si un des deux champs n'est pas indiqué, alors le node n'ont possède pas
+	// list of valid tags present in the node, contains
+	// the valid key list present in the node
+	// the list of valid values present in the node
+	// of the form <<key, value>, <key, value>, <key, value>>
+	// if one of the two fields is not indicated, then the node does not have
 	std::vector< std::vector<std::string>> tagsOK;
 
-	// un tag temporaire, qui sera par la suite rajouté à tagsOK
+	// a temporary tag, which will be added to tagsOK
 	std::vector<std::string> tagOK;
 
-	// si le flag vaut true, une valeure valide a était troue
-	//bool flag = false;
+	// if the flag is true, a valid value has been drilled (removed)
+	// bool flag = false;
 
 	std::ifstream fichier(arbo, std::ios::in);
 
 	if (fichier)
 	{
 
-		// parcourir chaque ligne du fichier arbo
+		// browse each line of the arbo file
 		while (getline(fichier, ligne))
 		{
-			// Si la ligne contient "Way"
+			// If the line contains "Way"
 			//    : ligne.find("Way") != std::string::npos
-			// et qu'elle ne contient pas "\t"
+			// and it does not contain "\t"
 			//    : ligne.find("\t") == std::string::npos
-			// alors la ligne courrante indique le nom d'une clé pour un way
+			// then the current line indicates the name of a key for a way
 			if ((ligne.find("Way") != std::string::npos)
 				&& (ligne.find("\t") == std::string::npos))
 			{
-				// On prend la catégorie de la clé
-				// Dans le fichier arbo, une clé est carractérisé
-				// par le premier mot de la phrase suivi de " [" 
+				// We take the category of the key
+				// In the arbo file, a key is characterized
+				// by the first word of the sentence followed by "["
 				keyArbo = ligne.substr(0, ligne.find(" ["));
 
-				// On analyse les tags du way donné
+				// We analyze the tags of the given way
 				for (Myreadosm_tag tag : myWay.getTags())
-					// Si le tag du way est valide
+					// If the way tag is valid
 					if (tag.getKey() == keyArbo)
 					{
-						// Alors on stock cette clé dans la liste des clé valide
+						// So we store this key in the valid key list
 						tagOK.push_back(tag.getKey());
 
 						tagsOK.push_back(tagOK);
 
-						// On cherche les valeure asscié
-						// tant que la ligne ne contient pas "\t[Way]"
+						// We look for the associated value
+						// as long as the line does not contain "\t[Way]"
 						while (ligne.find("\t[Way]") == std::string::npos)
 							getline(fichier, ligne);
 
@@ -400,17 +398,17 @@ std::vector< std::vector<std::string>> iArboWay(std::string arbo, Wayreadosm myW
 							getline(fichier, ligne);
 							if (ligne.find("\t\t") != std::string::npos)
 							{
-								// On stocke la valeur
+								// We store the value
 								valueArbo = ligne.substr(ligne.find("\t\t") + std::string("\t\t").size());
 
-								// Si le tag du node est valide
+								// If the tag of the node is valid
 								if (tag.getValue() == valueArbo)
-									// Alors on stock ce tag dans la liste des tags valide
+									// So we store tag in the valid tag list
 									tagOK.push_back(tag.getValue());
 
 								tagsOK.push_back(tagOK);
 
-								// réinitialisation de tagOK
+								// reset of "tagOK"
 								tagOK.clear();
 								tagOK.push_back(tag.getKey());
 							}
@@ -431,7 +429,7 @@ std::vector< std::vector<std::string>> iArboWay(std::string arbo, Wayreadosm myW
 	return tagsOK;
 }
 
-// Cette fonction insert un way dans les fichier adéquat en fonction de sa catégorie
+// This function inserts a way in the appropriate file according to its category
 static int
 insertWay(const void *user_data, const readosm_way * way)
 {
@@ -504,15 +502,16 @@ insertWay(const void *user_data, const readosm_way * way)
 			myWay.appendTags(myTag);
 		}
 
-	// Stockage du node dans la bonne catégorie en mémoire masse
+	// Storage of the node in the correct category in mass memory
 
-	// Stocke, pour commencer le node courrant dans le fichier des nodes
+	// Stores, to start the current node in the node file
 	fic = ".\\..\\..\\..\\Arbo\\Way.txt";
 	oWay(fic, myWay);
 
-	//puis, si sa catégorie est rensigné on stocke dans le fichier plus précis
+	// then, if its category is filled in, it is stored in the file more precisely
 
-	// On test la clé pour commencer
+
+	// We test the key to start
 	tagsOK = iArboWay(".\\..\\..\\..\\arbo.txt", myWay);
 	for (std::vector<std::string> tagOK : tagsOK)
 	{
@@ -531,13 +530,13 @@ insertWay(const void *user_data, const readosm_way * way)
 	return READOSM_OK;
 }
 
-// Ces trois fonctions sont pour les Relation
+// These three functions are for Relation
 
-// Cette fonction ouvre, écrit puis ferme le fichier
+// This function opens, writes and closes the file
 void oRelation(std::string fic, Relationreadosm myRelation)
 {
-	// Ouverture du fichier, le fichier est créé s'il n'existe pas,
-		// mais son contenu n'est pas supprimé s'il existe
+	// Opening the file, the file is created if it does not exist,
+	// but its content is not deleted if it exists
 	std::ofstream relationFile(fic, std::ios::out | std::ios::app);
 
 	if (relationFile)
@@ -578,65 +577,65 @@ void oRelation(std::string fic, Relationreadosm myRelation)
 		std::cerr << "Impossible d'ouvrir le fichier !" << std::endl;
 }
 
-// Cette fonction renvoie l'ensble des clés de "myRelation" présent dans le fichier "arbo"
-// Avec leurs valeure correct associée (ex: < < "waterway", "stream" >, < "building" >, etc.>
+// This function returns the set of keys of "myRelation" present in the file "arbo"
+// With their associated correct value (ex: <<"waterway", "stream">, <"building">, etc.>
 std::vector< std::vector<std::string>> iArboRelation(std::string arbo, Relationreadosm myRelation)
 {
-	// Ligne actuelle dans la lecture du fichier
+	// Current line in the file reading
 	std::string ligne;
 
-	// Nom d'une clé valide pour une catégorie
+	// Name of a valid key for a category
 	std::string keyArbo;
 
-	// Nom d'une valeur valide pour une catégorie
+	// Name of a valid value for a category
 	std::string valueArbo;
 
-	// liste des tag valide présent dans le node, contient
-	// la liste des clés valide présente dans le node
-	// la liste des valeures valide présente dans le node
-	// de la forme < <key, value>, <key, value>, <key, value> >
-	// si un des deux champs n'est pas indiqué, alors le node n'ont possède pas
+	// list of valid tags present in the node, contains
+	// the valid key list present in the node
+	// the list of valid values present in the node
+	// of the form <<key, value>, <key, value>, <key, value>>
+	// if one of the two fields is not indicated, then the node does not have
 	std::vector< std::vector<std::string>> tagsOK;
 
-	// un tag temporaire, qui sera par la suite rajouté à tagsOK
+	// a temporary tag, which will be added to tagsOK
 	std::vector<std::string> tagOK;
 
-	// si le flag vaut true, une valeure valide a était troue
-	//bool flag = false;
+	// if the flag is true, a valid value has been found (removed)
+	// bool flag = false;
 
 	std::ifstream fichier(arbo, std::ios::in);
 
 	if (fichier)
 	{
 
-		// parcourir chaque ligne du fichier arbo
+		// browse each line of the arbo file
 		while (getline(fichier, ligne))
 		{
-			// Si la ligne contient "Relation"
+			// If the line contains "Relation"
 			//    : ligne.find("Relation") != std::string::npos
-			// et qu'elle ne contient pas "\t"
+			// and it does not contain "\t"
 			//    : ligne.find("\t") == std::string::npos
-			// alors la ligne courrante indique le nom d'une clé pour une Relation
+			// then the current line indicates the name of a key for a "Relation"
 			if ((ligne.find("Relation") != std::string::npos)
 				&& (ligne.find("\t") == std::string::npos))
 			{
-				// On prend la catégorie de la clé
-				// Dans le fichier arbo, une clé est carractérisé
-				// par le premier mot de la phrase suivi de " [" 
+				// We take the category of the key
+				// In the arbo file, a key is characterized
+				// by the first word of the sentence followed by "["
 				keyArbo = ligne.substr(0, ligne.find(" ["));
 
-				// On analyse les tags du way donné
+				// We analyze the tags of the given relation
 				for (Myreadosm_tag tag : myRelation.getTags())
-					// Si le tag du way est valide
+					// If the relation tag is valid
 					if (tag.getKey() == keyArbo)
 					{
-						// Alors on stock cette clé dans la liste des clé valide
+						// So we store this key in the valid key list
 						tagOK.push_back(tag.getKey());
 
 						tagsOK.push_back(tagOK);
 
-						// On cherche les valeure asscié
-						// tant que la ligne ne contient pas "\t[Relation]"
+						// We look for the associated value
+						// while the line does not contain "\t[Relation]"
 						while (ligne.find("\t[Relation]") == std::string::npos)
 							getline(fichier, ligne);
 
@@ -645,17 +644,17 @@ std::vector< std::vector<std::string>> iArboRelation(std::string arbo, Relationr
 							getline(fichier, ligne);
 							if (ligne.find("\t\t") != std::string::npos)
 							{
-								// On stocke la valeur
+								// We store the value
 								valueArbo = ligne.substr(ligne.find("\t\t") + std::string("\t\t").size());
 
-								// Si le tag du node est valide
+								// If the tag of the node is valid
 								if (tag.getValue() == valueArbo)
-									// Alors on stock ce tag dans la liste des tags valide
+									// So we store tag in the valid tag list
 									tagOK.push_back(tag.getValue());
 
 								tagsOK.push_back(tagOK);
 
-								// réinitialisation de tagOK
+								// reset of "tagOK"
 								tagOK.clear();
 								tagOK.push_back(tag.getKey());
 							}
@@ -676,7 +675,8 @@ std::vector< std::vector<std::string>> iArboRelation(std::string arbo, Relationr
 	return tagsOK;
 }
 
-// Cette fonction insert un way dans les fichier adéquat en fonction de sa catégorie
+// This function inserts a relation in the appropriate file according to its category
+
 static int
 insertRelation(const void *user_data, const readosm_relation * relation)
 {
@@ -772,15 +772,15 @@ insertRelation(const void *user_data, const readosm_relation * relation)
 			myRelation.appendTags(myTag);
 		}
 
-	// Stockage du node dans la bonne catégorie en mémoire masse
+	// Storage of the node in the correct category in mass memory
 
-	// Stocke, pour commencer le node courrant dans le fichier des nodes
+	// Stores, to start the current no in the node file
 	fic = ".\\..\\..\\..\\Arbo\\Relation.txt";
 	oRelation(fic, myRelation);
 
-	//puis, si sa catégorie est rensigné on stocke dans le fichier plus précis
+	// Then, if its category is renamed, it is stored in the file more precisely
 
-	// On test la clé pour commencer
+	// We test the key to start
 	tagsOK = iArboRelation(".\\..\\..\\..\\arbo.txt", myRelation);
 	for (std::vector<std::string> tagOK : tagsOK)
 	{
@@ -799,7 +799,7 @@ insertRelation(const void *user_data, const readosm_relation * relation)
 	return READOSM_OK;
 }
 
-// Constructeur / déstructeur
+// Constructor / Destructor
 
 OsmWithreadosm::OsmWithreadosm()
 {
@@ -844,8 +844,7 @@ OsmWithreadosm::~OsmWithreadosm()
 
 void iNode(std::string fic)
 {
-	// Ouverture du fichier, le fichier est créé s'il n'existe pas,
-		// mais son contenu n'est pas supprimé s'il existe
+	// open the file
 	std::ifstream NodeFile(fic, std::ios::in);
 
 	std::string ligne;
@@ -907,8 +906,7 @@ void iNode(std::string fic)
 
 void iWay(std::string fic)
 {
-	// Ouverture du fichier, le fichier est créé s'il n'existe pas,
-	// mais son contenu n'est pas supprimé s'il existe
+	// open the file
 	std::ifstream WayFile(fic, std::ios::in);
 
 	std::string ligne;
@@ -971,8 +969,7 @@ void iWay(std::string fic)
 
 void iRelation(std::string fic)
 {
-	// Ouverture du fichier, le fichier est créé s'il n'existe pas,
-	// mais son contenu n'est pas supprimé s'il existe
+	// open the file
 	std::ifstream RelationFile(fic, std::ios::in);
 
 	std::string ligne;
@@ -1054,40 +1051,40 @@ void OsmWithreadosm::initWithCat(std::vector<std::string> nodes, std::vector<std
 {
 	std::string fic;
 
-	// si on a spécifier aucune clé
+	// if no key has been specified
 	if (nodes[0] != "")
 		fic = ".\\..\\..\\..\\Arbo\\Node.txt";
-	// si on a spécifié une clé mais pas de value
+	// if we specify a key but no value
 	else if (nodes[1] != "")
 		fic = ".\\..\\..\\..\\Arbo\\Node[]" + nodes[0] + ".txt";
-	// si on aspécifié une clé et une value
+	// if we cut a key and a value
 	else
 		fic = ".\\..\\..\\..\\Arbo\\Node[]" + nodes[0] + "[]" + nodes[1] + ".txt";
 	iNode(fic);
 
-	// si on a spécifier aucune clé
+	// if no key has been specified
 	if(ways[0] != "")
 		fic = ".\\..\\..\\..\\Arbo\\Way.txt";
-	// si on a spécifié une clé mais pas de value
+	// if we specify a key but no value
 	else if (ways[1] != "")
 		fic = ".\\..\\..\\..\\Arbo\\Way[]" + ways[0] + ".txt";
-	// si on aspécifié une clé et une value
+	// if we cut a key and a value
 	else
 		fic = ".\\..\\..\\..\\Arbo\\Way[]" + ways[0] + "[]" + ways[1] +  ".txt";
 	iWay(fic);
 
-	// si on a spécifier aucune clé
+	// if no key has been specified
 	if (relations[0] != "")
 		fic = ".\\..\\..\\..\\Arbo\\Relation.txt";
-	// si on a spécifié une clé mais pas de value
+	// if we specify a key but no value
 	else if (relations[1] != "")
 		fic = ".\\..\\..\\..\\Arbo\\Relation[]" + relations[0] + ".txt";
-	// si on aspécifié une clé et une value
+	// if we cut a key and a value
 	else
 		fic = ".\\..\\..\\..\\Arbo\\Relation[]" + relations[0] + "[]" + relations[1] + ".txt";
 	iRelation(fic);
 
-	// Stockage des valeurs dans l'objet
+	// Storing values in the object
 	this->nodes = ::myNodes;
 	this->ways = ::myWays;
 	this->relations = ::myRelations;
@@ -1115,7 +1112,7 @@ extractNode(const void *user_data, const readosm_node * node)
 	if (user_data != NULL)
 		user_data = NULL;	/* silencing stupid compiler warnings */
 
-	// si le flag vaut "true" alors le node courrant est ce que veut l'utilisateur
+	// if the flag is "true" then the current node is what the user wants
 	bool flag = false;
 
 	myNode.setTag_count(node->tag_count);
@@ -1127,7 +1124,7 @@ extractNode(const void *user_data, const readosm_node * node)
 			myTag.setKey(tag->key);
 			myTag.setValue(tag->value);
 			myNode.appendTags(myTag);
-			// la key puis la value est bon
+			// the key then the value is good
 			if (myTag.getKey() == ::nodesKey || ::nodesKey.size() == 0)
 			{
 				if (myTag.getValue() == ::nodesValue || ::nodesValue.size() == 0)
@@ -1199,7 +1196,7 @@ extractWay(const void *user_data, const readosm_way * way)
 	if (user_data != NULL)
 		user_data = NULL;	/* silencing stupid compiler warnings */
 
-	// si le flag vaut "true" alors le way courrant est ce que veut l'utilisateur
+	// if the flag is "true" then the current way is what the user wants
 	bool flag = false;
 
 	myWay.setTag_count(way->tag_count);
@@ -1211,7 +1208,7 @@ extractWay(const void *user_data, const readosm_way * way)
 			myTag.setKey(tag->key);
 			myTag.setValue(tag->value);
 			myWay.appendTags(myTag);
-			// la key puis la value est bon
+			// the key then the value is good
 			if (myTag.getKey() == ::waysKey || ::waysKey.size() == 0)
 			{
 				if (myTag.getValue() == ::waysValue || ::waysValue.size() == 0)
@@ -1419,7 +1416,7 @@ void OsmWithreadosm::initWithTags(std::vector<std::string> nodes, std::vector<st
 	// STEP #3: closing the OSM file
 	readosm_close(osmHandle);
 
-	// Stockage des valeurs dans l'objet
+	// Storing values in the object
 	this->nodes = ::myNodes;
 	this->ways = ::myWays;
 	this->relations = ::myRelations;
@@ -1432,7 +1429,7 @@ void OsmWithreadosm::changeFile(std::string fileOsm)
 	this->fileOsm = fileOsm;
 }
 
-// Arboressence
+// tree
 /*
 Arbo OsmWithreadosm::getArbo()
 {
@@ -1836,7 +1833,7 @@ Relationreadosm OsmWithreadosm::getRelationWithId(std::string id, bool flag = fa
 }
 
 
-// obtenir tt
+// get everything
 std::vector<Nodereadosm> OsmWithreadosm::getNodes(void)
 {
 	return this->nodes;
