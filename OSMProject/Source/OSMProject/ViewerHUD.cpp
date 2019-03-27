@@ -1,12 +1,14 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "ViewerHUD.h"
+#include "SSGameMenuWidget.h"
 #include "Engine/Canvas.h"
 #include "Engine/GameEngine.h"
 #include "Public/CanvasItem.h"
 #include "Widgets/SWeakWidget.h"
 #include "Runtime/Engine/Classes/Engine/Engine.h"
 #include <fstream>
+#include <algorithm>
 
 AViewerHUD::AViewerHUD() {
 	CrosshairColor_ = FColor::White;
@@ -24,7 +26,7 @@ void AViewerHUD::BeginPlay() {
 		SNew(SWeakWidget)
 		.PossiblyNullContent(GMWidget.ToSharedRef())
 	);
-	//GMWidget->SetVisibility(EVisibility::Visible);
+	GMWidget->SetVisibility(EVisibility::Hidden);
 }
 
 void AViewerHUD::DrawHUD()
@@ -48,16 +50,6 @@ void AViewerHUD::DrawHUD()
 		// Find the center of our canvas.
 		FVector2D Center(Canvas->ClipX * 0.5f, Canvas->ClipY * 0.5f);
 		drawCrosshair(Center.X, Center.Y);
-	}
-	else {
-		//Crosshair in Game Menu.
-		if (showGameMenu_) {
-			APlayerController* const PlayerController = Cast<APlayerController>(GEngine->GetFirstLocalPlayerController(GetWorld()));
-			if (PlayerController != NULL) {
-				PlayerController->GetMousePosition(MouseLocation_.X, MouseLocation_.Y);
-				drawCrosshair(MouseLocation_.X, MouseLocation_.Y);
-			}
-		}
 	}
 
 	DrawText(TEXT("ViewerHUD v2"), FLinearColor::Black, (Canvas->ClipX * 0.5f) - 25, 10);
@@ -100,7 +92,7 @@ void AViewerHUD::drawGameMenu() {
 	//Menu Content
 	if (GMWidget->GetVisibility() != EVisibility::Visible) GMWidget->SetVisibility(EVisibility::Visible);
 
-	DrawText(TEXT("Press M to quit menu."), FLinearColor::Black, (Canvas->ClipX * 0.5f) - 40, Canvas->ClipY - 40);
+	DrawText(TEXT("Press M to quit menu."), FLinearColor::Black, Canvas->ClipX - 150, Canvas->ClipY - 40);
 }
 
 void AViewerHUD::addCatSubcatToHashmap(std::string category, std::string subcategory, std::map<std::string, std::vector<std::pair<std::string, DrawStatus>>>& hashmap) {
@@ -185,6 +177,46 @@ std::map<std::string, std::vector<std::pair<std::string, AViewerHUD::DrawStatus>
 
 std::map<std::string, std::vector<std::pair<std::string, AViewerHUD::DrawStatus>>> AViewerHUD::getCatsSubcatsRelations() {
 	return CatsSubcatsRelations_;
+}
+
+void AViewerHUD::requestShowOSMElement(std::string category, std::string subcategory, std::map<std::string, std::vector<std::pair<std::string, AViewerHUD::DrawStatus>>>& hashmap) {
+	auto it = hashmap.find(category);
+	auto itbis = std::find_if(it->second.begin(), it->second.end(), [&subcategory](const std::pair<std::string, AViewerHUD::DrawStatus> element) { return (element.first == subcategory); });
+	switch (itbis->second) {
+		case NOT_DRAWED:
+			itbis->second = TO_BE_DRAWED;
+			break;
+		case TO_BE_UNDRAWED:
+			itbis->second = DRAWED;
+			break;
+		case TO_BE_DRAWED:
+			break;
+		case DRAWED:
+			break;
+	}
+}
+
+void AViewerHUD::requestHideOSMElement(std::string category, std::string subcategory, std::map<std::string, std::vector<std::pair<std::string, AViewerHUD::DrawStatus>>>& hashmap) {
+	auto it = hashmap.find(category);
+	auto itbis = std::find_if(it->second.begin(), it->second.end(), [&subcategory](const std::pair<std::string, AViewerHUD::DrawStatus> element) { return (element.first == subcategory); });
+	switch (itbis->second) {
+		case NOT_DRAWED:
+			break;
+		case TO_BE_UNDRAWED:
+			break;
+		case TO_BE_DRAWED:
+			itbis->second = NOT_DRAWED;
+			break;
+		case DRAWED:
+			itbis->second = TO_BE_UNDRAWED;
+			break;
+	}
+}
+
+void AViewerHUD::updateOSMElementsInWorld() {
+	int drawed = 0, undrawed = 0;
+	
+	GEngine->AddOnScreenDebugMessage(-1, 10.0f, FColor::Red, "Drawed : " + FString::FromInt(drawed) + " / Undrawed : " + FString::FromInt(undrawed));
 }
 
 void AViewerHUD::sendActorInfo(/* Parameter, by reference, in which it'll contain actor info */) {

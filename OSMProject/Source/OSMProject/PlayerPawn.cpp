@@ -99,8 +99,9 @@ void APlayerPawn::GameMenu() {
 	APlayerController* const PlayerController = Cast<APlayerController>(GEngine->GetFirstLocalPlayerController(GetWorld()));
 	bool inGameMenu = Hud->getGameMenuVisibility();
 	if (inGameMenu) {
-		//Exit game menu, then exit pause.
-		Hud->setCrosshairColor(FColor::White);
+		//Update OSM Elements in world (if needed), exit game menu, then exit pause.
+		Hud->updateOSMElementsInWorld();
+		PlayerController->bShowMouseCursor = false;
 		Hud->setInGameCrosshairVisibility(true);
 		Hud->setGameMenuVisibility(false);
 		if(PlayerController != NULL) PlayerController->SetPause(false);
@@ -109,7 +110,8 @@ void APlayerPawn::GameMenu() {
 		//Pause, then show game menu.
 		if(PlayerController != NULL) PlayerController->SetPause(true);
 		Hud->setInGameCrosshairVisibility(false);
-		Hud->setCrosshairColor(FColor::Black);
+		//We need to put this line in order to interact with Slate widget.
+		PlayerController->bShowMouseCursor = true;
 		Hud->setGameMenuVisibility(true);
 	}
 }

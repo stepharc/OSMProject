@@ -16,8 +16,7 @@ BEGIN_SLATE_FUNCTION_BUILD_OPTIMIZATION
 void SSGameMenuWidget::Construct(const FArguments& InArgs)
 {
 	OwnerHUD = InArgs._OwnerHUDArg;
-	/*AViewerHUD* hud = OwnerHUD.Get();
-	auto map = hud->getCatsSubcatsNodes();*/
+	AViewerHUD* hud = OwnerHUD.Get();
 
 	ChildSlot
 	[
@@ -55,66 +54,76 @@ void SSGameMenuWidget::Construct(const FArguments& InArgs)
 				]
 
 				+ SGridPanel::Slot(0, 1)
-				[
-					SNew(STextBlock)
-						.Font(FSlateFontInfo(FPaths::EngineContentDir() / TEXT("Slate/Fonts/Verdana.ttf"), 18))
-						.Text(LOCTEXT("SCheckBoxLabel", "SCheckBox"))
-				]
-
-				+ SGridPanel::Slot(0, 2)
 					.HAlign(HAlign_Center)
 				[
-					SNew(SVerticalBox)
+					CreateSubcategoryCheckList(hud->getCatsSubcatsNodes())
+				]
 
-					+ SVerticalBox::Slot()
-						.AutoHeight()
-					[
-						CreateCheckBox(LOCTEXT("SCheckBoxItemLabel01", "Option 1"))
-					]
+				+ SGridPanel::Slot(1, 1)
+					.HAlign(HAlign_Center)
+				[
+					CreateSubcategoryCheckList(hud->getCatsSubcatsWays())
+				]
 
-					+ SVerticalBox::Slot()
-						.AutoHeight()
-					[
-						CreateCheckBox(LOCTEXT("SCheckBoxItemLabel02", "Option 2"))
-					]
-
-					+ SVerticalBox::Slot()
-						.AutoHeight()
-					[
-						CreateCheckBox(LOCTEXT("SCheckBoxItemLabel03", "Option 3"))
-					]
+				+ SGridPanel::Slot(2, 1)
+					.HAlign(HAlign_Center)
+				[
+					CreateSubcategoryCheckList(hud->getCatsSubcatsRelations())
 				]
 			]
 		]
 	];
 }
 
-TSharedRef<SWidget> SSGameMenuWidget::CreateCheckBox(const FText& CheckBoxText)
+TSharedRef<SVerticalBox> SSGameMenuWidget::CreateSubcategoryCheckList(std::map<std::string, std::vector<std::pair<std::string, AViewerHUD::DrawStatus>>> hashmap) {
+	TSharedRef<SVerticalBox> Box = SNew(SVerticalBox);
+	for (auto it = hashmap.begin(); it != hashmap.end(); it++) {
+		std::string category = it->first;
+		for (int i = 0; i < it->second.size(); i++) {
+			std::string subcategory = it->second[i].first;
+			std::string textCheckBox = category + std::string(" - ") + subcategory;
+			FText text = FText::FromString(FString(textCheckBox.c_str()));
+			Box->AddSlot()
+				.AutoHeight()
+				[
+					CreateCheckBox(text, category, subcategory, hashmap)
+				];
+		}
+	}
+	return Box;
+}
+
+TSharedRef<SWidget> SSGameMenuWidget::CreateCheckBox(const FText& CheckBoxText, std::string cat, std::string subcat, std::map<std::string, std::vector<std::pair<std::string, AViewerHUD::DrawStatus>>> hashmap)
 {
 	return SNew(SCheckBox)
-		.ClickMethod(EButtonClickMethod::DownAndUp)
-		//.IsChecked(this, &SSGameMenuWidget::HandleCheckBoxChecked)
-		.OnCheckStateChanged(this, &SSGameMenuWidget::HandleCheckBoxCheckedStateChanged)
+		.IsEnabled(true)
+		.OnCheckStateChanged(this, &SSGameMenuWidget::HandleCheckBoxCheckedStateChanged, cat, subcat, hashmap)
 		[
 			SNew(STextBlock)
-			.Font(FSlateFontInfo(FPaths::EngineContentDir() / TEXT("Slate/Fonts/Verdana.ttf"), 18))
+			.Font(FSlateFontInfo(FPaths::EngineContentDir() / TEXT("Slate/Fonts/Verdana.ttf"), 20))
 			.Text(CheckBoxText)
 		];
 }
 
-ECheckBoxState SSGameMenuWidget::HandleCheckBoxChecked() const
+void SSGameMenuWidget::HandleCheckBoxCheckedStateChanged(ECheckBoxState NewState, std::string cat, std::string subcat, std::map<std::string, std::vector<std::pair<std::string, AViewerHUD::DrawStatus>>> hashmap)
 {
-	return ECheckBoxState::Checked;
-}
-
-void SSGameMenuWidget::HandleCheckBoxCheckedStateChanged(ECheckBoxState NewState)
-{
+	AViewerHUD* hud = OwnerHUD.Get();
 	if (NewState == ECheckBoxState::Checked) {
-		GEngine->AddOnScreenDebugMessage(-1, 10.0f, FColor::Red, TEXT("Checked."));
+		//GEngine->AddOnScreenDebugMessage(-1, 10.0f, FColor::Red, "Checked. : " + FString(cat.c_str()) + " " + FString(subcat.c_str()));
+		hud->requestShowOSMElement(cat, subcat, hashmap);
 	}
 	else { //Unchecked
-		GEngine->AddOnScreenDebugMessage(-1, 10.0f, FColor::Red, TEXT("Unchecked."));
+		//GEngine->AddOnScreenDebugMessage(-1, 10.0f, FColor::Red, TEXT("Unchecked."));
+		hud->requestHideOSMElement(cat, subcat, hashmap);
 	}
+}
+
+void SSGameMenuWidget::Tick(const FGeometry& AllottedGeometry, const double InCurrentTime, const float InDeltaTime)
+{
+	// Call parent implementation
+	SCompoundWidget::Tick(AllottedGeometry, InCurrentTime, InDeltaTime);
+
+	//can do things here every tick
 }
 
 #undef LOCTEXT_NAMESPACE
