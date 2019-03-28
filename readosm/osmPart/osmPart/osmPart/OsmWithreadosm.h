@@ -31,7 +31,7 @@ public:
 	/*!
 	 *  \brief Constructor
 	 *
-	 *  Constructor of the class OsmWithreadosm, this one allows to give a file by default and categorize objects
+	 *  Constructor of the class OsmWithreadosm, this one allows to give a file by default
 	 */
 	OsmWithreadosm();
 
@@ -41,6 +41,13 @@ public:
 	*  Destructor of the class OsmWithreadosm
 	*/
 	~OsmWithreadosm();
+
+	/*!
+	 *  \brief Categorize objects
+	 *
+	 *  Categorize objects
+	 */
+	void classify(void);
 
 	// Donne une arboressence
 	//Arbo getArbo();

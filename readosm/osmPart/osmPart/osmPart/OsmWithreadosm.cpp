@@ -804,7 +804,11 @@ insertRelation(const void *user_data, const readosm_relation * relation)
 OsmWithreadosm::OsmWithreadosm()
 {
 	this->fileOsm = "..\\..\\..\\var.osm";
+}
 
+
+void OsmWithreadosm::classify(void)
+{
 	std::ifstream file(".\\..\\..\\..\\Arbo\\Node.txt", std::ios::in);
 
 	if (file)
@@ -836,7 +840,6 @@ OsmWithreadosm::OsmWithreadosm()
 		readosm_close(osmHandle);
 	}
 }
-
 
 OsmWithreadosm::~OsmWithreadosm()
 {
