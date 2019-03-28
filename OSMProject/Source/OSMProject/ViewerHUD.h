@@ -4,11 +4,12 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/HUD.h"
-#include "SSGameMenuWidget.h"
 #include <map>
 #include <string>
 #include <vector>
 #include "ViewerHUD.generated.h"
+
+class SSGameMenuWidget;
 
 /**
  * 
@@ -17,9 +18,11 @@ UCLASS()
 class OSMPROJECT_API AViewerHUD : public AHUD
 {
 	GENERATED_BODY()
-	
+
+public:
+	enum DrawStatus { NOT_DRAWED, TO_BE_UNDRAWED, TO_BE_DRAWED, DRAWED };
+
 private:
-	FVector2D MouseLocation_;
 	FColor CrosshairColor_;
 	float CrosshairSize_;
 	int infoBoxLines_;
@@ -27,10 +30,9 @@ private:
 	bool showCrosshair_;
 	bool showGameMenu_;
 
-	enum DrawStatus { NOT_DRAWED, TO_BE_UNDRAWED, TO_BE_DRAWED, DRAWED };
-	std::map<std::string, std::vector<std::pair<std::string, DrawStatus>>> CatsSubcatsNodes_;
-	std::map<std::string, std::vector<std::pair<std::string, DrawStatus>>> CatsSubcatsWays_;
-	std::map<std::string, std::vector<std::pair<std::string, DrawStatus>>> CatsSubcatsRelations_;
+	std::map<std::string, std::vector<std::pair<std::string, AViewerHUD::DrawStatus>>> CatsSubcatsNodes_;
+	std::map<std::string, std::vector<std::pair<std::string, AViewerHUD::DrawStatus>>> CatsSubcatsWays_;
+	std::map<std::string, std::vector<std::pair<std::string, AViewerHUD::DrawStatus>>> CatsSubcatsRelations_;
 
 	void drawCrosshair(int32 x, int32 y);
 	void drawInfoBoxAndContent();
@@ -48,9 +50,12 @@ public:
 	void setInGameCrosshairVisibility(bool v);
 	void setGameMenuVisibility(bool v);
 	bool getGameMenuVisibility();
-	std::map<std::string, std::vector<std::pair<std::string, DrawStatus>>> getCatsSubcatsNodes();
-	std::map<std::string, std::vector<std::pair<std::string, DrawStatus>>> getCatsSubcatsWays();
-	std::map<std::string, std::vector<std::pair<std::string, DrawStatus>>> getCatsSubcatsRelations();
+	std::map<std::string, std::vector<std::pair<std::string, AViewerHUD::DrawStatus>>> getCatsSubcatsNodes();
+	std::map<std::string, std::vector<std::pair<std::string, AViewerHUD::DrawStatus>>> getCatsSubcatsWays();
+	std::map<std::string, std::vector<std::pair<std::string, AViewerHUD::DrawStatus>>> getCatsSubcatsRelations();
+	void requestShowOSMElement(std::string category, std::string subcategory, std::map<std::string, std::vector<std::pair<std::string, AViewerHUD::DrawStatus>>>& hashmap);
+	void requestHideOSMElement(std::string category, std::string subcategory, std::map<std::string, std::vector<std::pair<std::string, AViewerHUD::DrawStatus>>>& hashmap);
+	void updateOSMElementsInWorld();
 	void sendActorInfo();
 	void BeginPlay();
 };

@@ -3,6 +3,9 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "ViewerHUD.h"
+#include <map>
+#include <vector>
 #include "Widgets/SCompoundWidget.h"
 
 /**
@@ -22,7 +25,8 @@ public:
 	void Construct(const FArguments& InArgs);
 private:
 	TWeakObjectPtr<class AViewerHUD> OwnerHUD;
-	TSharedRef<SWidget> CreateCheckBox(const FText& CheckBoxText);
-	ECheckBoxState HandleCheckBoxChecked() const;
-	void HandleCheckBoxCheckedStateChanged(ECheckBoxState NewState);
+	TSharedRef<SWidget> CreateCheckBox(const FText& CheckBoxText, std::string cat, std::string subcat, std::map<std::string, std::vector<std::pair<std::string, AViewerHUD::DrawStatus>>> hashmap);
+	TSharedRef<SVerticalBox> CreateSubcategoryCheckList(std::map<std::string, std::vector<std::pair<std::string, AViewerHUD::DrawStatus>>> hashmap);
+	void HandleCheckBoxCheckedStateChanged(ECheckBoxState NewState, std::string cat, std::string subcat, std::map<std::string, std::vector<std::pair<std::string, AViewerHUD::DrawStatus>>> hashmap);
+	void Tick(const FGeometry& AllottedGeometry, const double InCurrentTime, const float InDeltaTime);
 };
